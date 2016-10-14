@@ -1,0 +1,72 @@
+@font-face{
+	font-family: 'Bebas Neue Regular';
+	src: url('../fonts/bebas-neue-regular/BebasNeue Regular.ttf');
+}
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+    padding: 0;
+}
+body{
+	margin:0;
+}
+
+/****  fonts ****/
+
+p{
+	font-family: 'Oxygen', sans-serif;
+	font-weight:100;
+	color:$txt-white;
+	line-height: 1.8;
+	font-size: 1.15rem;
+}
+h2{
+	font-size: 5.7rem;
+}
+
+h1, h2,h3,h4,h5,h6{
+	font-family: 'Bebas Neue Regular', sans-serif;
+	margin: 0px;
+}
+
+  /* seleccion */
+::-webkit-scrollbar-track {
+   background-color: blue;
+} 
+::-moz-selection { color: white;  background: #00FF5A; }
+::selection      { color: white;  background: #00FF5A; } 
+
+ /** scroll y efecto */
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+.active{
+	color:$txt-verde;
+}
+// .col{
+// 	border:1px solid white;
+// }
+.pd-8{
+	padding-top:8%;
+}
+.pdn-8{
+	padding:4% 0%;
+}
+.pd-2{
+	margin-top:2rem;
+}
+.w-500{
+	font-weight:600;
+}
+.txt-verde{
+	color:$txt-verde;
+}
+.txt-negro{
+	color:black;
+}
+.btn-verde{
+	background:$bg-verde;
+}

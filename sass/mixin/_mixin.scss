@@ -1,0 +1,28 @@
+@mixin Perfil_Title_tr($top,$right){
+	transition:all .9s;
+	top:$top;
+	right:$right;
+}
+@mixin Perfil_Title_tl($top,$left){
+	transition:all .9s;
+	top:$top;
+	left:$left;
+}
+@mixin Perfil_Title_bl($bottom,$left){
+	transition:all .9s;
+	bottom:$bottom;
+	left:$left;
+}
+@mixin Perfil_Title_br($bottom,$right){
+	transition:all .9s;
+	bottom:$bottom;
+	right:$right;
+}
+
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}

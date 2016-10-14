@@ -1,0 +1,535 @@
+/***Header Deslizable**/
+.main-nav{
+	background: $bg-verde;
+	border-right: 0.01em solid #fff;
+	height:100vh;
+	left:-35vw;
+	line-height: 44px; 
+	transition: all .5s;
+	width: 35vw;
+	z-index: 100000;
+	position:fixed;
+}
+.menu{
+	list-style:none;
+	margin:0;
+	padding:7em 0.5em;
+}
+
+.menu__item{
+	align-items:center;
+	display:flex;
+	justify-content:flex-end;
+	margin:0 15px;
+	.menu__link{
+		span{
+			font-family: $font-bebas;
+			text-decoration:none;
+		}
+		.nav-text{
+			font-family: $font-bebas;
+			color:white;
+			font-size: 1.8rem;
+		}
+		.subir, .bajar{
+			font-size: 0.9rem;
+			position: relative;
+			top:-10px;
+			color:black;
+		}
+	}
+}
+
+/**Menu Barra -> X ***/
+.menu-bar{
+	border-radius:50px;
+	border:0.5px solid $bg-white;
+	height:40px;
+	padding:8px 4px;
+	position:absolute;
+	right:-120px;
+	top:50px;
+	width:40px;
+	z-index:100000;
+}
+
+.mover{
+	right:-60px;
+}
+
+.uno, .dos, .tres{
+	background:white;
+	height:1.1px;
+	margin:5px;
+	width:65%;
+	transition: all 0.5s;
+}
+
+.mostrar{
+	left:0px;
+	.uno{
+		transform: rotate(45deg) translate(4px,6px);
+	}
+	.dos{
+		opacity: 0;
+	}
+	.tres{
+		transform: rotate(-45deg) translate(2px,-5px);
+	}
+}
+
+/**Menu Parallax **/
+#nav-parallax{
+	background:none;
+	border-right: 0.01em solid #adabab;
+	height: 100vh;
+	left: 0em; 
+	position:fixed;
+    width:5%; 
+    z-index: 100;
+}
+
+.nav{
+	position:relative;
+	top:20%;
+	.menu_item{
+	position:relative;	
+		.hover-nav{
+			position:relative;
+			width: 250px;
+			span{
+				position: relative;
+			}
+			span:last-child{
+				position: relative;
+				display: none;
+				right: -30px;
+			}
+		}
+	}
+}
+/*** Efectos de Hover **/
+
+.hover-nav:hover .hover-bajar{
+    bottom: -3px;
+    left: 0px;
+}
+.hover-nav:hover .hover-subir{
+    left: 0px;
+    top:-3px;
+}
+
+.hover-nav:hover .hover-txt{
+	display:inline-block!important;
+	position: relative;
+	right: -30px;
+}
+.visible{
+	display:inline-block!important;
+	transition: all .5s;
+}
+/*  --------------------------------------------- */
+/* Large screen layout ----------- */  
+/* slide layout --------------------------------------------- */
+
+.slide {
+	height:100vh;
+    width: 100%;
+    position: relative;
+    padding: 8% 0;
+ //   margin-left: 7%;
+    border:1px solid white;
+}
+.slide__content {
+    max-width: 1200px;
+    margin: auto;
+ /*** Cambiar color **/
+}
+.slide__text {
+    padding: 0% 8%;
+}
+.slide__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+/**** Personalizacion de section */
+	.slider{
+		height: 100vh;
+		border:1px solid blue;
+		
+	}
+
+.slides{
+
+	section:first-child{
+	//	height: 100vh;
+		background:$bg-black;
+		h2{
+			color:white;
+		}
+		p{
+			font-size: 2rem;
+		}
+	}	
+	section:nth-child(2){
+	//	height: 100vh;
+		background:$bg-black;
+		h2{
+			color:white;
+		}
+	}
+	section:nth-child(3){
+		background: $bg-white;
+		span{
+			color:$bg-verde;
+			font-family:$font-bebas;
+			font-size: 2rem;
+			font-weight: 600;
+		}
+		h2{
+			color:black;
+		}
+	}
+	section:nth-child(4){
+
+		background:$bg-verde;
+		h2{
+			color:white;
+		}
+		h4{
+			color:white;
+		}
+		p{
+			color:white;
+		}
+	}
+	section:nth-child(5){
+	//	height: 100vh;
+		background: $bg-white;
+		h2{
+			
+		}
+		p{
+			color:white;
+		}
+	}
+	section:nth-child(6){
+	//	height: 100vh;
+		background:$bg-white;
+		.slider{
+			background:$bg-white;
+		}
+		h3{
+			font-family:$font-bebas;
+		}
+		a{
+			margin:1rem;
+			border-radius:55px;
+		}
+	}
+}
+.bg-verde{
+	background:$bg-verde;
+}
+/**** texto para el cuerpo y titulo **/
+
+/** SLIDER 1 */
+.logo{
+	height: 100vh;
+	padding:20% 0;
+}
+/**  Nuestros servicios **/
+.circle{
+	display:inline-block;
+	height:3rem;
+	width:3rem;
+	background:$bg-verde;
+	border-radius:50%;
+	.check{
+    	position: relative;
+   	 	top: 0.2rem;
+    	left: 0.6rem;
+    	color:white;
+	}
+}
+/*********  pilares ******/
+.ico-img{
+	height:4rem;
+	width:4rem;
+	border-radius:50%;
+}
+
+/*** Perfiles */
+
+
+.Perfiles-js{
+	position:float;
+	right:0;
+	.nav{
+		position: absolute;
+    	top: 30%;
+   		right: 10%;
+		ul{
+			li{
+				position: relative;
+				.active{
+					opacity: 1;
+					color:white;
+				}
+				a{
+					font-family:$font-bebas;
+					font-size: 2rem;
+					background: none;
+					width: 8rem;
+					color:white;
+					opacity: 0.2;
+				}
+
+				span{
+					background: white;
+					color:white;
+					}
+			}
+			li:hover a{
+				color:white;
+				opacity: 1;
+			}
+	
+			li:hover .linea{
+				background: white;
+				color:white;
+				display: inline-block;
+				height: 0.05rem;
+				margin-left: 6px;
+				position: absolute;
+				right: -2.5rem;
+				top: 1rem;
+				width:2rem;
+
+
+
+			}
+		}
+	}
+}
+.mix{
+	display: none;	
+}
+#Container{
+	padding-top:30rem;
+	height:30rem;
+	.mix{
+		margin:2px;
+		margin-bottom: 5px;
+		position: absolute;
+		img{
+			height: 4.5rem;
+    		border: 2px solid white;
+			width: 4.5rem;
+   		}
+	}
+	.consultor:first-child{
+		@include Perfil_Title_tr(40%,40%); 
+	}
+	.consultor:nth-child(2){
+		@include Perfil_Title_tr(10%,48%); 
+	}
+	.consultor:nth-child(3){
+		@include Perfil_Title_tr(10%,20%); 
+	}
+	.consultor:nth-child(4){
+		@include Perfil_Title_tl(10%,20%); 
+	}
+	.consultor:nth-child(5){
+		@include Perfil_Title_br(10%,20%); 
+	}
+	.consultor:nth-child(6){
+		@include Perfil_Title_bl(10%,20%); 
+	}
+	.desarrollo:nth-child(7){
+		@include Perfil_Title_tr(40%,35%); 
+	}
+	.desarrollo:nth-child(8){
+		@include Perfil_Title_tr(17%,48%); 
+	}
+	.desarrollo:nth-child(9){
+		@include Perfil_Title_tr(17%,20%); 
+	}
+	.desarrollo:nth-child(10){
+		@include Perfil_Title_tl(17%,20%); 
+	}
+	.desarrollo:nth-child(11){
+		@include Perfil_Title_br(17%,20%); 
+	}
+	.desarrollo:nth-child(12){
+		@include Perfil_Title_bl(17%,20%); 
+	}
+	.experto:nth-child(13){
+		@include Perfil_Title_tr(50%,40%); 
+	}
+	.experto:nth-child(14){
+		@include Perfil_Title_tr(17%,48%); 
+	}
+	.experto:nth-child(15){
+		@include Perfil_Title_tr(17%,20%); 
+	}
+	.experto:nth-child(16){
+		@include Perfil_Title_tl(17%,20%); 
+	}
+	.experto:nth-child(17){
+		@include Perfil_Title_br(17%,20%); 
+	}
+	.experto:nth-child(18){
+		@include Perfil_Title_bl(17%,20%); 
+	}
+	.ventas:nth-child(19){
+		@include Perfil_Title_tr(50%,46%); 
+	}
+	.ventas:nth-child(20){
+		@include Perfil_Title_tr(17%,48%); 
+	}
+	.ventas:nth-child(21){
+		@include Perfil_Title_tr(17%,20%); 
+	}
+	.ventas:nth-child(22){
+		@include Perfil_Title_tl(17%,20%); 
+	}
+	.ventas:nth-child(23){
+		@include Perfil_Title_br(17%,20%); 
+	}
+	.ventas:nth-child(24){
+		@include Perfil_Title_bl(17%,20%); 
+	}
+}
+
+
+/*** CLIENTES **/
+.section-cliente{
+	h2{
+		padding: 0.5em 0;
+		color:$txt-verde;
+	}
+	.col{
+		.cliente{
+			//background-color:white;
+			border-radius:15px;
+			background-repeat: no-repeat;
+			background-size:100% 100%;
+			height:8rem;
+			width:100%;
+		}
+		.cliente:hover{
+			background-color:white;
+			box-shadow:3px 5px 5px rgba(111, 187, 99, 0.93);
+			transition: all .5s;
+		}
+		.logo-cliente-1{
+			background-image:url('../img/mibanco-logo.png');
+		}
+		.logo-clinte-2{
+			background-image:url('../img/entel-logo.png');
+		}
+		.logo-cliente-3{
+			background-image:url('../img/logo-sura.png');
+		}
+	}
+}
+/** Partner **/
+.section-partner{
+	.row{
+		
+		h2{
+			margin-bottom: 5rem;
+			color:$txt-verde;
+		}
+		.col{
+			.partner{
+				//background-color:white;
+				background-position: center;
+    			background-repeat: no-repeat;
+				height: 10rem;
+				width: 90%;
+
+			}
+			.partner:hover{
+			background-color:white;
+			box-shadow:3px 5px 5px rgba(111, 187, 99, 0.93);
+			transition: all .5s;
+			}
+			p{
+				color:$txt-verde;
+			}
+			.part-1{
+				background-image:url('../img/partner/IBM-logo.png');
+				background-size: 100% 100%;
+			}
+			.part-2{
+				background-image:url('../img/partner/Oracle-partner.png');
+				background-size: 80% 70%;
+				
+			}
+			.part-3{
+				background-image:url('../img/partner/tableau_partner.png');
+				background-size: 100% 80%;
+				
+			}
+		}
+	}
+}
+/* Contactanos */
+#form1, #form2{
+	display:none;
+	position:absolute;
+	top:-10%;
+	left:0;
+	z-index:1000;
+	width:100%;
+	background:white;
+	h4{
+		color:$txt-verde;
+		display: inline-block;
+	}
+	.btn-cerrar{
+		padding-top:5px;
+	}
+	textarea, button{
+		background:$bg-verde;
+	}
+	.btn-cerrar{
+		background: white;
+		border: 1px solid gray;
+		.icon{
+			color:gray;
+		}
+	}
+}
+.red{
+	color:$bg-verde;
+}
+.icon-contacto{
+	.icon{
+		display: inline-block;
+		width:4rem;
+		height: 4rem;
+		color:black;
+		fill:black;
+	}
+	.icon:hover{
+		color:$txt-verde;
+		fill:$txt-verde;		
+	}
+	.cell{
+		font-size: 3rem;
+	}
+	.cell:hover{
+		color:$txt-verde;
+	}
+	.mail-txt, .cell-txt{
+		display: block;
+	}
+}

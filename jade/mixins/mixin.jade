@@ -1,0 +1,40 @@
+mixin nav_des(href,name,subir,bajar,title)
+	li.menu__item
+		a.menu__link(class=name  href=href)
+			spam.nav-text=title
+			span.subir=subir
+			span.bajar=bajar
+
+mixin nav-parallax(name,name1,href,subir,bajar,title)
+	li.menu_item(class=name )
+		a.hover-nav.menu_link(class=name1  href=href)
+			span.hover-subir=subir
+			span.hover-bajar=bajar
+			span.hover-txt(class="hover-nav-text-"+bajar)=title 
+
+mixin check(p)
+	.row
+		.pd-2
+			.col.s2
+				span.circle
+					i.material-icons.check done
+			.col.s10
+				p=p
+
+mixin pilar(image,h4,p1,p2,p3)
+	.row
+		.slide__text
+			.row
+				img.responsive-img.ico-img.z-depth-2(src=image)
+			.row
+				h4.sub-title=h4
+				p=p1
+				p=p2
+				p=p3
+
+mixin perfil(img,name,p,h2)
+	.mix(class=name)
+		if (p==1)
+			h2=h2
+		else 
+			img.z-depth-3.circle(src=img)
