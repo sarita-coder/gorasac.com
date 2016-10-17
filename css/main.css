@@ -3085,7 +3085,7 @@ nav {
       transition: background-color .3s;
       padding: 0; }
       nav ul li.active {
-        background-color: rgba(0, 0, 0, 0.1); }
+        background-color: transparent; }
     nav ul a {
       transition: background-color .3s;
       font-size: 1rem;
@@ -3098,7 +3098,7 @@ nav {
         margin-left: 15px;
         margin-right: 15px; }
       nav ul a:hover {
-        background-color: rgba(0, 0, 0, 0.1); }
+        background-color: transparent; }
     nav ul.left {
       float: left; }
   nav form {
@@ -6333,12 +6333,14 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   margin: 0;
   padding: 0; }
 
-body {
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre,
+form, fieldset, input, textarea, p, blockquote, th, td {
+  padding: 0;
   margin: 0; }
 
 /****  fonts ****/
 p {
-  font-family: 'Oxygen', sans-serif;
+  font-family: "Oxygen", sans-serif;
   font-weight: 100;
   color: #909399;
   line-height: 1.8;
@@ -6352,23 +6354,17 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0px; }
 
 /* seleccion */
-::-webkit-scrollbar-track {
-  background-color: blue; }
-
 ::-moz-selection {
   color: white;
-  background: #00FF5A; }
+  background: black; }
 
 ::selection {
   color: white;
-  background: #00FF5A; }
+  background: black; }
 
 /** scroll y efecto */
 ::-webkit-scrollbar {
   display: none; }
-
-.active {
-  color: #8ac832; }
 
 .pd-8 {
   padding-top: 8%; }
@@ -6394,7 +6390,7 @@ h1, h2, h3, h4, h5, h6 {
 /***Header Deslizable**/
 .main-nav {
   background: #8ac832;
-  border-right: 0.01em solid #fff;
+  border-right: 0.01em solid rgba(216, 214, 214, 0.9);
   height: 100vh;
   left: -35vw;
   line-height: 44px;
@@ -6413,23 +6409,30 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: flex-end;
   margin: 0 15px; }
-  .menu__item .menu__link span {
-    font-family: "Bebas Neue Regular", sans-serif;
-    text-decoration: none; }
-  .menu__item .menu__link .nav-text {
-    font-family: "Bebas Neue Regular", sans-serif;
-    color: white;
-    font-size: 1.8rem; }
-  .menu__item .menu__link .subir, .menu__item .menu__link .bajar {
-    font-size: 0.9rem;
-    position: relative;
-    top: -10px;
-    color: black; }
+  .menu__item .menu__link {
+    padding-right: 1rem; }
+    .menu__item .menu__link span {
+      font-family: "Bebas Neue Regular", sans-serif;
+      text-decoration: none; }
+    .menu__item .menu__link .nav-text {
+      font-family: "Bebas Neue Regular", sans-serif;
+      color: white;
+      font-size: 1.8rem; }
+    .menu__item .menu__link .subir, .menu__item .menu__link .bajar {
+      font-size: 0.9rem;
+      position: relative;
+      top: -10px;
+      color: black; }
+
+.menu__link:hover {
+  padding-right: 0rem;
+  -webkit-transition: all .6s;
+  transition: all .6s; }
 
 /**Menu Barra -> X ***/
 .menu-bar {
   border-radius: 50px;
-  border: 0.5px solid #e0e0e0;
+  border: 0.5px solid white;
   height: 40px;
   padding: 8px 4px;
   position: absolute;
@@ -6460,7 +6463,7 @@ h1, h2, h3, h4, h5, h6 {
 /**Menu Parallax **/
 #nav-parallax {
   background: none;
-  border-right: 0.01em solid #adabab;
+  border-right: 0.01em solid white;
   height: 100vh;
   left: 0em;
   position: fixed;
@@ -6471,44 +6474,72 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   top: 20%; }
   .nav .menu_item {
-    position: relative; }
+    position: relative;
+    padding-left: 2rem; }
     .nav .menu_item .hover-nav {
       position: relative;
-      width: 250px; }
+      padding-left: 3rem;
+      width: 12rem; }
       .nav .menu_item .hover-nav span {
-        position: relative; }
-      .nav .menu_item .hover-nav span:last-child {
         position: relative;
+        font-family: "Oxygen", sans-serif;
+        font-size: 0.8rem;
+        color: white; }
+      .nav .menu_item .hover-nav span:last-child {
         display: none;
-        right: -30px; }
+        right: -2rem; }
 
 /*** Efectos de Hover **/
+.nav .active {
+  padding-left: 0rem !important;
+  transition: all .5s; }
+  .nav .active span {
+    color: #000000 !important; }
+  .nav .active .hover-txt {
+    display: inline-block !important; }
+
 .hover-nav:hover .hover-bajar {
   bottom: -3px;
-  left: 0px; }
+  left: 1.5; }
 
 .hover-nav:hover .hover-subir {
-  left: 0px;
+  left: 1.5;
   top: -3px; }
 
 .hover-nav:hover .hover-txt {
-  display: inline-block !important;
-  position: relative;
-  right: -30px; }
+  display: inline-block !important; }
 
-.visible {
-  display: inline-block !important;
-  transition: all .5s; }
+/**logo*/
+.logo {
+  position: fixed;
+  top: 0;
+  width: 60%; }
+  .logo .logo-vooxel {
+    display: table;
+    margin: auto;
+    padding-top: 30%; }
+    .logo .logo-vooxel .VOOXELL {
+      width: 25rem;
+      height: 10rem;
+      z-index: 1000;
+      opacity: 0.6;
+      -webkit-transition: width .5s, height .5s, margin .5s; }
 
 /*  --------------------------------------------- */
 /* Large screen layout ----------- */
 /* slide layout --------------------------------------------- */
+#particles-js {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 10;
+  opacity: 0.4; }
+
 .slide {
   height: 100vh;
   width: 100%;
   position: relative;
-  padding: 8% 0;
-  border: 1px solid white; }
+  padding: 8% 0; }
 
 .slide__content {
   max-width: 1200px;
@@ -6528,47 +6559,44 @@ h1, h2, h3, h4, h5, h6 {
 
 /**** Personalizacion de section */
 .slider {
-  height: 100vh;
-  border: 1px solid blue; }
+  height: 100vh; }
 
-.slides section:first-child {
-  background: #2d2f31; }
-  .slides section:first-child h2 {
-    color: white; }
-  .slides section:first-child p {
-    font-size: 2rem; }
 .slides section:nth-child(2) {
   background: #2d2f31; }
   .slides section:nth-child(2) h2 {
     color: white; }
+  .slides section:nth-child(2) p {
+    font-size: 1.2rem; }
 .slides section:nth-child(3) {
+  background: #2d2f31; }
+  .slides section:nth-child(3) h2 {
+    color: white; }
+.slides section:nth-child(4) {
   background: #e0e0e0; }
-  .slides section:nth-child(3) span {
+  .slides section:nth-child(4) span {
     color: #8ac832;
     font-family: "Bebas Neue Regular", sans-serif;
     font-size: 2rem;
     font-weight: 600; }
-  .slides section:nth-child(3) h2 {
-    color: black; }
-.slides section:nth-child(4) {
-  background: #8ac832; }
   .slides section:nth-child(4) h2 {
-    color: white; }
-  .slides section:nth-child(4) h4 {
-    color: white; }
-  .slides section:nth-child(4) p {
-    color: white; }
+    color: black; }
 .slides section:nth-child(5) {
-  background: #e0e0e0; }
+  background: #8ac832; }
+  .slides section:nth-child(5) h2 {
+    color: white; }
+  .slides section:nth-child(5) h4 {
+    color: white; }
   .slides section:nth-child(5) p {
     color: white; }
 .slides section:nth-child(6) {
   background: #e0e0e0; }
-  .slides section:nth-child(6) .slider {
-    background: #e0e0e0; }
-  .slides section:nth-child(6) h3 {
+  .slides section:nth-child(6) p {
+    color: white; }
+.slides section:nth-child(7) {
+  background: #e0e0e0; }
+  .slides section:nth-child(7) h3 {
     font-family: "Bebas Neue Regular", sans-serif; }
-  .slides section:nth-child(6) a {
+  .slides section:nth-child(7) a {
     margin: 1rem;
     border-radius: 55px; }
 
@@ -6577,10 +6605,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /**** texto para el cuerpo y titulo **/
 /** SLIDER 1 */
-.logo {
-  height: 100vh;
-  padding: 20% 0; }
-
 /**  Nuestros servicios **/
 .circle {
   display: inline-block;
@@ -6802,7 +6826,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   z-index: 1000;
   width: 100%;
-  background: white; }
+  background: #e0e0e0; }
   #form1 h4, #form2 h4 {
     color: #8ac832;
     display: inline-block; }
@@ -6811,7 +6835,7 @@ h1, h2, h3, h4, h5, h6 {
   #form1 textarea, #form1 button, #form2 textarea, #form2 button {
     background: #8ac832; }
   #form1 .btn-cerrar, #form2 .btn-cerrar {
-    background: white;
+    background: #e0e0e0;
     border: 1px solid gray; }
     #form1 .btn-cerrar .icon, #form2 .btn-cerrar .icon {
       color: gray; }
@@ -6847,7 +6871,10 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%; }
 
   .vh-100 {
-    height: 100%; } }
+    height: 100%; }
+
+  h2 {
+    font-size: 2.7rem; } }
    /* @media screen and (min-width: 45em) {
 
     .slide__content {

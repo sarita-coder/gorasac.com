@@ -8,14 +8,17 @@
 	margin: 0;
     padding: 0;
 }
-body{
-	margin:0;
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
 }
 
 /****  fonts ****/
 
 p{
-	font-family: 'Oxygen', sans-serif;
+	font-family: $font-Oxygen;
 	font-weight:100;
 	color:$txt-white;
 	line-height: 1.8;
@@ -30,12 +33,10 @@ h1, h2,h3,h4,h5,h6{
 	margin: 0px;
 }
 
+
   /* seleccion */
-::-webkit-scrollbar-track {
-   background-color: blue;
-} 
-::-moz-selection { color: white;  background: #00FF5A; }
-::selection      { color: white;  background: #00FF5A; } 
+::-moz-selection { color: white;  background: black; }
+::selection      { color: white;  background: black; } 
 
  /** scroll y efecto */
 
@@ -43,12 +44,6 @@ h1, h2,h3,h4,h5,h6{
     display: none; 
 }
 
-.active{
-	color:$txt-verde;
-}
-// .col{
-// 	border:1px solid white;
-// }
 .pd-8{
 	padding-top:8%;
 }
