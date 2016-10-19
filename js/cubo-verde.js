@@ -11,7 +11,7 @@ particlesJS.load('particles-js', 'particles.json', function() {
 
 /* Otherwise just put the config content (json): */
 
-particlesJS('particles-js',
+particlesJS('particles',
   
 {
   "particles": {
@@ -35,9 +35,9 @@ particlesJS('particles-js',
         "nb_sides": 6
       },
       "image": {
-        "src": "img/vooxel/cubo-verde.png",
-        "width": 10,
-        "height": 10
+        "src": "img/vooxel/cubo_vooxell.png",
+        "width": 8,
+        "height": 8
       }
     },
     "opacity": {

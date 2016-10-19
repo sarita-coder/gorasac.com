@@ -3134,11 +3134,11 @@ nav {
 
 @media only screen and (min-width: 601px) {
   nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
-    height: 64px;
-    line-height: 64px; }
+    height: 3.5rem;
+    line-height: 3.5rem; }
 
   .navbar-fixed {
-    height: 64px; } }
+    height: 3.5rem; } }
 @font-face {
   font-family: "Roboto";
   src: local(Roboto Thin), url("../fonts/roboto/Roboto-Thin.eot");
@@ -6334,7 +6334,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   padding: 0; }
 
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre,
-form, fieldset, input, textarea, p, blockquote, th, td {
+form, fieldset, input, textarea, p, blockquote, th, td, section {
   padding: 0;
   margin: 0; }
 
@@ -6463,7 +6463,7 @@ h1, h2, h3, h4, h5, h6 {
 /**Menu Parallax **/
 #nav-parallax {
   background: none;
-  border-right: 0.01em solid white;
+  border-right: 0.01em solid rgba(47, 41, 41, 0.21);
   height: 100vh;
   left: 0em;
   position: fixed;
@@ -6484,7 +6484,7 @@ h1, h2, h3, h4, h5, h6 {
         position: relative;
         font-family: "Oxygen", sans-serif;
         font-size: 0.8rem;
-        color: white; }
+        color: #909399; }
       .nav .menu_item .hover-nav span:last-child {
         display: none;
         right: -2rem; }
@@ -6519,26 +6519,24 @@ h1, h2, h3, h4, h5, h6 {
     margin: auto;
     padding-top: 30%; }
     .logo .logo-vooxel .VOOXELL {
-      width: 25rem;
+      width: 30rem;
       height: 10rem;
       z-index: 1000;
-      opacity: 0.6;
+      opacity: 0.8;
       -webkit-transition: width .5s, height .5s, margin .5s; }
 
 /*  --------------------------------------------- */
 /* Large screen layout ----------- */
 /* slide layout --------------------------------------------- */
-#particles-js {
+#particles {
   width: 100%;
   height: 100vh;
   position: fixed;
-  opacity: 0.4; }
+  opacity: 1; }
 
-.slide {
-  height: 100vh;
+#particles-js {
   width: 100%;
-  position: relative;
-  padding: 8% 0; }
+  height: 150vh; }
 
 .slide__content {
   max-width: 1200px;
@@ -6560,42 +6558,50 @@ h1, h2, h3, h4, h5, h6 {
 .slider {
   height: 100vh; }
 
-.slides section:nth-child(2) {
+#fullpage section:nth-child(2) h2 {
+  color: white; }
+#fullpage section:nth-child(2) p {
+  font-size: 1.2rem; }
+#fullpage section:nth-child(3) h2 {
+  color: white; }
+#fullpage section:nth-child(4) span {
+  color: #8ac832;
+  font-family: "Bebas Neue Regular", sans-serif;
+  font-size: 2rem;
+  font-weight: 600; }
+#fullpage section:nth-child(4) h2 {
+  color: black; }
+#fullpage section:nth-child(5) h2 {
+  color: white; }
+#fullpage section:nth-child(5) h4 {
+  color: white; }
+#fullpage section:nth-child(5) p {
+  color: white; }
+#fullpage section:nth-child(6) p {
+  color: white; }
+#fullpage section:nth-child(6) h2 {
+  color: white; }
+#fullpage section:nth-child(7) {
   background: #2d2f31; }
-  .slides section:nth-child(2) h2 {
+  #fullpage section:nth-child(7) h2 {
+    color: black;
+    margin-bottom: 0; }
+  #fullpage section:nth-child(7) p {
     color: white; }
-  .slides section:nth-child(2) p {
-    font-size: 1.2rem; }
-.slides section:nth-child(3) {
-  background: #2d2f31; }
-  .slides section:nth-child(3) h2 {
-    color: white; }
-.slides section:nth-child(4) {
+#fullpage section:nth-child(8) {
+  height: 100vh;
   background: #e0e0e0; }
-  .slides section:nth-child(4) span {
-    color: #8ac832;
-    font-family: "Bebas Neue Regular", sans-serif;
-    font-size: 2rem;
-    font-weight: 600; }
-  .slides section:nth-child(4) h2 {
-    color: black; }
-.slides section:nth-child(5) {
-  background: #8ac832; }
-  .slides section:nth-child(5) h2 {
+  #fullpage section:nth-child(8) h2 {
     color: white; }
-  .slides section:nth-child(5) h4 {
-    color: white; }
-  .slides section:nth-child(5) p {
-    color: white; }
-.slides section:nth-child(6) {
+  #fullpage section:nth-child(8) a {
+    margin: 1rem;
+    border-radius: 55px; }
+#fullpage section:nth-child(9) {
+  height: 100vh;
   background: #e0e0e0; }
-  .slides section:nth-child(6) p {
-    color: white; }
-.slides section:nth-child(7) {
-  background: #e0e0e0; }
-  .slides section:nth-child(7) h3 {
+  #fullpage section:nth-child(9) h3 {
     font-family: "Bebas Neue Regular", sans-serif; }
-  .slides section:nth-child(7) a {
+  #fullpage section:nth-child(9) a {
     margin: 1rem;
     border-radius: 55px; }
 
@@ -6793,13 +6799,10 @@ h1, h2, h3, h4, h5, h6 {
   background-image: url("../img/logo-sura.png"); }
 
 /** Partner **/
-.section-partner .row h2 {
-  margin-bottom: 5rem;
-  color: #8ac832; }
 .section-partner .row .col .partner {
   background-position: center;
   background-repeat: no-repeat;
-  height: 10rem;
+  height: 8rem;
   width: 90%; }
 .section-partner .row .col .partner:hover {
   background-color: white;
@@ -6821,7 +6824,7 @@ h1, h2, h3, h4, h5, h6 {
 #form1, #form2 {
   display: none;
   position: absolute;
-  top: -10%;
+  top: 10%;
   left: 0;
   z-index: 1000;
   width: 100%;

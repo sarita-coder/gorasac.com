@@ -1,14 +1,17 @@
-mixin nav_des(href,name,subir,bajar,title)
+mixin nav_des(p,i,href,name,subir,bajar,title)
 	li.menu__item
-		a.menu__link(class=name  href=href)
-			spam.nav-text=title
-			span.subir=subir
-			span.bajar=bajar
+		if (p==1)
+			a.menu__link(class=name  href=href)
+				spam.nav-text=title
+				span.subir=subir
+				span.bajar=bajar
+		else 
+			a.red-social(target="_blank" href=ref)
+				i(class=name data-icon=i)
 
-
-mixin nav-parallax(name,name1,href,subir,bajar,title)
-	li.menu_item.li(class=name )
-		a.hover-nav.menu_link(class=name1  href=href)
+mixin nav-parallax(href,subir,bajar,title)
+	li.menu_item.li(data-menuanchor=href)
+		a.hover-nav.menu_link(href='#'+href)
 			span.hover-subir=subir
 			span.hover-bajar=bajar
 			span.hover-txt(class="hover-nav-text-"+bajar)=title 

@@ -254,7 +254,7 @@
 				self._printSort();
 			}
 
-			self._activeFilter = self.load.filter === '.consultor' ?
+			self._activeFilter = self.load.filter === 'consultor' ?
 				self.selectors.target :
 				self.load.filter === 'none' ?
 					'' :

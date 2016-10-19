@@ -85,7 +85,7 @@
 /**Menu Parallax **/
 #nav-parallax{
 	background:none;
-	border-right: 0.01em solid white;
+	border-right: 0.01em solid rgba(47, 41, 41, 0.21);
 	height: 100vh;
 	left: 0em; 
 	position:fixed;
@@ -107,7 +107,7 @@
 				position: relative;
 				font-family:$font-Oxygen;
 				font-size: 0.8rem;
-				color:white;
+				color:$txt-white;
 			}
 			span:last-child{
 				display: none;
@@ -153,10 +153,10 @@
 		//background: green;
 		padding-top: 30%;
 		.VOOXELL{
-			width: 25rem;
+			width: 30rem;
 			height: 10rem;
 			z-index: 1000;
-			opacity: 0.6;
+			opacity: 0.8;
 			-webkit-transition: width .5s, height .5s, margin .5s;
 		}
 	}
@@ -166,21 +166,23 @@
 /*  --------------------------------------------- */
 /* Large screen layout ----------- */  
 /* slide layout --------------------------------------------- */
-#particles-js{
+#particles{
 	width: 100%;
 	height:100vh;
 	position:fixed;
-	opacity:0.4;
+	opacity:1;
+}
+#particles-js{
+	width: 100%;
+	height:150vh;
 }
 
-.slide {
-	height:100vh;
-    width: 100%;
-    position: relative;
-    padding: 8% 0;
- //   margin-left: 7%;
- //   border:1px solid white;
-}
+// .slide {
+// 	height:100vh;
+//     width: 100%;
+//     position: relative;
+//    	padding: 8% 0;
+// }
 .slide__content {
     max-width: 1200px;
     margin: auto;
@@ -199,15 +201,15 @@
 }
 
 /**** Personalizacion de section */
-	.slider{
-		height: 100vh;
+.slider{
+	height: 100vh;
 		//border:1px solid blue;
-	}
+}
 
-.slides{
+#fullpage{
 	section:nth-child(2){
 	//	height: 100vh;
-		background:$bg-black;
+		//background:$bg-black;
 		h2{
 			color:white;
 		}
@@ -217,13 +219,13 @@
 	}	
 	section:nth-child(3){
 	//	height: 100vh;
-		background:$bg-black;
+		//background:$bg-black;
 		h2{
 			color:white;
 		}
 	}
 	section:nth-child(4){
-		background: $bg-white;
+		//background: $bg-white;
 		span{
 			color:$bg-verde;
 			font-family:$font-bebas;
@@ -235,7 +237,8 @@
 		}
 	}
 	section:nth-child(5){
-		background:$bg-verde;
+		//background:$bg-verde;
+
 		h2{
 			color:white;
 		}
@@ -248,13 +251,42 @@
 	}
 	section:nth-child(6){
 	//	height: 100vh;
-		background: $bg-white;
+		//background: $bg-white;
+		p{
+			color:white;
+		}
+		h2{
+			color:white;
+		}
+
+	}
+	section:nth-child(7){
+	//	height: 100vh;
+		background: $bg-black;
+		h2{
+			color:black;
+			margin-bottom: 0;
+		}
+
 		p{
 			color:white;
 		}
 	}
-	section:nth-child(7){
-	//	height: 100vh;
+	section:nth-child(8){
+	    height: 100vh;
+		background:$bg-white;
+		.slider{
+		}
+		h2{
+			color:white;
+		}
+		a{
+			margin:1rem;
+			border-radius:55px;
+		}
+	}
+	section:nth-child(9){
+	    height: 100vh;
 		background:$bg-white;
 		.slider{
 		}
@@ -468,16 +500,12 @@
 /** Partner **/
 .section-partner{
 	.row{
-		h2{
-			margin-bottom: 5rem;
-			color:$txt-verde;
-		}
 		.col{
 			.partner{
 				//background-color:white;
 				background-position: center;
     			background-repeat: no-repeat;
-				height: 10rem;
+				height: 8rem;
 				width: 90%;
 			}
 			.partner:hover{
@@ -508,7 +536,7 @@
 #form1, #form2{
 	display:none;
 	position:absolute;
-	top:-10%;
+	top:10%;
 	left:0;
 	z-index:1000;
 	width:100%;
