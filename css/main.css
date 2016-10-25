@@ -6370,7 +6370,10 @@ h1, h2, h3, h4, h5, h6 {
 .pd-8 {
   padding-top: 8%; }
 
-.pdn-8 {
+.pdt-8 {
+  padding-top: 8%; }
+
+.pd-tb-4 {
   padding: 4% 0%; }
 
 .pd-lr-4 {
@@ -6379,7 +6382,7 @@ h1, h2, h3, h4, h5, h6 {
 .pd-2 {
   margin-top: 2rem; }
 
-.pdt-2 {
+.mg-2 {
   margin: 2rem; }
 
 .w-500 {
@@ -6396,6 +6399,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .row, .col, .waves-effect, h2 {
   z-index: 3; }
+
+.fp-controlArrow {
+  border-color: #00FF5A; }
 
 /***Header Deslizable**/
 .main-nav {
@@ -6742,27 +6748,33 @@ h1, h2, h3, h4, h5, h6 {
 /***Clientes**/
 .carousel {
   z-index: 3; }
-  .carousel .carousel-item img {
-    height: 90%;
-    border: 1px solid #00FF5A;
-    box-shadow: 1px 1px 1px #00FF5A;
-    opacity: 0.5; }
-  .carousel .carousel-item .nombre-cliente {
-    position: absolute;
-    background: #00FF5A;
-    top: 0%;
-    left: 0%; }
-  .carousel .carousel-item .modal-trigger {
-    display: none;
-    background: #00FF5A;
-    position: absolute;
-    top: 50%;
-    left: -5%; }
-  .carousel .carousel-item .modal {
-    width: 300%;
-    height: 150%;
-    padding: 5%;
-    z-index: 1000; }
+  .carousel .carousel-item {
+    top: -23%; }
+    .carousel .carousel-item img {
+      height: 90%;
+      border: 1px solid #00FF5A;
+      box-shadow: 1px 1px 1px #00FF5A; }
+    .carousel .carousel-item .nombre-cliente {
+      position: absolute;
+      background: #00FF5A;
+      top: 0%;
+      left: 0%; }
+    .carousel .carousel-item .modal-trigger {
+      display: none;
+      background: #00FF5A;
+      position: absolute;
+      top: 50%;
+      left: -5%; }
+    .carousel .carousel-item .modal {
+      width: 300%;
+      height: 150%;
+      padding: 5%;
+      z-index: 1000; }
+  .carousel .modal-content .lista {
+    padding-left: 20px; }
+    .carousel .modal-content .lista li {
+      list-style-image: url("../img/vooxel/faviconSinFondo.ico");
+      font-size: 1rem; }
   .carousel .carousel-item:hover .modal-trigger {
     display: inline-block;
     background: black;
@@ -6823,29 +6835,60 @@ h1, h2, h3, h4, h5, h6 {
     #form1 .btn-cerrar .icon, #form2 .btn-cerrar .icon {
       color: gray; }
 
-.red {
-  color: #00FF5A; }
+.red_contacto {
+  padding-top: 20%;
+  display: flex;
+  justify-content: space-between; }
+  .red_contacto a {
+    display: flex;
+    align-items: stretch; }
 
-.icon-contacto .icon {
-  display: inline-block;
-  width: 4rem;
-  height: 4rem;
-  color: black;
-  fill: black; }
-.icon-contacto .icon:hover {
-  color: #00FF5A;
-  fill: #00FF5A; }
-.icon-contacto .cell {
-  font-size: 3rem; }
-.icon-contacto .cell:hover {
-  color: #00FF5A; }
-.icon-contacto .mail-txt, .icon-contacto .cell-txt {
-  display: block; }
+.icon-contacto {
+  width: 100%;
+  z-index: 1000; }
+  .icon-contacto a {
+    z-index: 1002;
+    color: black; }
+    .icon-contacto a i {
+      color: black; }
+  .icon-contacto a:hover i, .icon-contacto a:hover span {
+    color: #00FF5A;
+    margin-bottom: 5px; }
+  .icon-contacto .icon {
+    display: inline-block;
+    width: 2rem;
+    height: 1.5rem;
+    color: black;
+    fill: black; }
+  .icon-contacto .icon:hover {
+    color: #00FF5A;
+    fill: #00FF5A; }
+  .icon-contacto .cell {
+    font-size: 1.5rem; }
+  .icon-contacto .cell:hover {
+    color: #00FF5A; }
 
 @media (max-width: 768px) {
   .vh-100 {
     height: 100vh; } }
 @media (max-width: 768px) {
+  h2 {
+    font-size: 2.1rem; }
+
+  h4 {
+    font-size: 1.3rem; }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.3; }
+
+  .pd-8, .pd-2, .pd-lr-4, .mg-2 {
+    padding: 0%;
+    margin: 0%; }
+
+  .mg-responsive-5 {
+    margin-top: 5%; }
+
   #nav-parallax {
     display: none; }
 
@@ -6856,23 +6899,32 @@ h1, h2, h3, h4, h5, h6 {
   .vh-100 {
     height: 100%; }
 
-  h2 {
-    font-size: 2.7rem; } }
-   /* @media screen and (min-width: 45em) {
+  /**** barra de menu para smarphone **/
+  .main-nav {
+    width: 85vw;
+    left: -85vw; }
 
-    .slide__content {
-      display: -webkit-flex;
-      display: flex;
-      align-items: center;
-    }
-    .slide__image, .slide__text {
-      padding: 3%;
-      -webkit-flex: 1;
-      flex: 1;
-    } 
-    .slide:nth-child(2n) .slide__text {
-      -webkit-order: 1;
-      order: 1;
-    } */
+  .menu-bar {
+    right: -60px;
+    top: 20px; }
+
+  .mostrar {
+    left: 0px; }
+
+  .logo .logo-vooxel {
+    padding-top: 60%; }
+    .logo .logo-vooxel .VOOXELL {
+      width: 90vw; }
+
+  .circle {
+    height: 1rem;
+    width: 1rem; }
+    .circle .check {
+      font-size: 12px;
+      top: -1.3rem;
+      left: 0.05rem; }
+
+  .Numero {
+    font-size: 1rem; } }
 
 /*# sourceMappingURL=main.css.map */

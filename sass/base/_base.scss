@@ -48,7 +48,10 @@ h1, h2,h3,h4,h5,h6{
 .pd-8{
 	padding-top:8%;
 }
-.pdn-8{
+.pdt-8{
+	padding-top:8%;
+}
+.pd-tb-4{
 	padding:4% 0%;
 }
 .pd-lr-4{
@@ -57,7 +60,7 @@ h1, h2,h3,h4,h5,h6{
 .pd-2{
 	margin-top:2rem;
 }
-.pdt-2{
+.mg-2{
 	margin:2rem;
 }
 .w-500{
@@ -74,4 +77,7 @@ h1, h2,h3,h4,h5,h6{
 }
 .row, .col, .waves-effect, h2{
 	z-index:3;
+}
+.fp-controlArrow{
+	border-color:$bg-verde;
 }

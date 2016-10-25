@@ -53,11 +53,10 @@ html(lang="en")
 							p.logo-text You have data,
 								span.w-500 we give you a new dimension
 
-
 			section.section
 				.container
 					.row.scrollflow.-slide-bottom(data-scrollflow-start="0" data-scrollflow-distance="100" data-scrollflow-amount="200")
-						.col.l6.s12.center-align.pd-2
+						.col.l6.s12.center-align.pd-2.hide-on-small-only
 							img(src="img/vooxel/vooxell-contacto-logo.svg")
 
 						.col.l6.s12.center-align.pd-2
@@ -68,28 +67,28 @@ html(lang="en")
 			section.section
 				.row
 					.slide
-						.pd-lr-4.scrollflow.-slide-bottom(data-scrollflow-start="0" data-scrollflow-distance="100" data-scrollflow-amount="200")
+						.pd-lr-4
 							.row
 								.col.offset-l1.s11.l5.left-align
 									h2 NUESTROS SERVICIOS
 									P  Vooxell le invita a ver distintos ángulos de un mismo escenario, una nueva dimensión de la tecnología puesta en sus manos para optimizar sus procesos y generar valor a su negocio; trabajando juntos, encontrando soluciones y oportunidades que harán realidad sus proyecciones. La búsqueda de soluciones a su medida, es nuestro desafío.
 								.col.s12.l5.offset-l1
-									.row.pd-8
+									.row.pd-8.mg-responsive-5
 										+check("Inteligencia de Negocios (BigData, Aceleradores).")
 										+check("Desarrollo Ágil.")
 										+check("Consultoría experta (Migración, BD, Assessment).")
 
 					.slide
 						.pd-lr-4
-							.row.pdt-2
-								.col.offset-l1.s12.l5.left-align.scrollflow
+							.row.mg-2
+								.col.offset-l1.s12.l5.left-align
 									.-slide-right
 										span.Numero 01.
 										h2 Inteligencia de Negocios
 										h4 (BigData, Aceleradores)
 										P  Decisiones oportunas para lograr una ventaja competitiva.
 								.col.s12.l5.offset-l1.left-align.scrollflow
-									.-slide-left.-opacity
+									.-slide-left.-opacity.mg-responsive-5
 										.row
 											+check("Un know-how estructural y operativo diferente y un grupo humano de gran sinergia, creativo, innovador y multidisciplinario.")
 
@@ -99,13 +98,13 @@ html(lang="en")
 
 					.slide
 						.pd-lr-4
-							.row.pdt-2
-								.col.s12.offset-l1.l5.left-align.scrollflow.-slide-right.-opacity
+							.row.mg-2
+								.col.s12.offset-l1.l5.left-align.-slide-right.-opacity
 									span.Numero 02.
 									h2 Desarrollo Ágil
 									P  Un nuevo enfoque de revoluciona el desarrollo del software.
 								.col.s12.l5.offset-l1.left-align.scrollflow.-slide-left.-opacity
-									.row
+									.row.mg-responsive-5
 										+check("Almacenar y gestionar gran cantidad de datos, para transformarlos en información útil y confiable.")
 
 										+check("Estamos dispuestos a brindarle información segura y oportuna, que le ayudará no sólo a optimizar sus procesos de toma de decisiones.")
@@ -121,7 +120,7 @@ html(lang="en")
 									h4 (Migración, BD, Assessment)
 									P  Nuestro activo más importante a su servicio
 								.col.s12.l5.offset-l1.left-align.vh-100.scrollflow.-slide-left.-opacity
-									.row.pd-8
+									.row.pd-8.mg-responsive-5
 										+check("Almacenar y gestionar gran cantidad de datos, para transformarlos en información útil y confiable.")
 
 										+check("Estamos dispuestos a brindarle información segura y oportuna, que le ayudará no sólo a optimizar sus procesos de toma de decisiones.")
@@ -132,7 +131,7 @@ html(lang="en")
 				.container.center-align
 					.row
 						h2 NUESTROS PILARES
-					.row.pd-2
+					.row.mg-2
 						.col.s4.scrollflow.-slide-bottom.-opacity
 							+pilar('img/pilar/experiencia.png','EXPERIENCIA','Confianza','Conocimiento','Especialización')
 
@@ -144,7 +143,7 @@ html(lang="en")
 
 			section.section
 				.container.Perfiles-js
-					.contenedor-inicial.center-align.pd-4
+					.contenedor-inicial.center-align.pd-tb-4
 						h2 REFERENCIAS DEL EQUIPO
 						p Nuestro equipo de inteligencia es una garantía de estabilidad y experiencia en el manejo de sus problemas.
 					.nav
@@ -197,14 +196,13 @@ html(lang="en")
 					.row.section-cliente.pd-2
 						h2#slide-5-title.title-cliente NUESTROS CLIENTES
 						p Conoce cómo pensamos, en qué proyectos estamos involucrados, e ideas sobre nuestra visión a futuro.
-						.carousel
-							+clientes("img/cliente/sura-infra.jpg","modal-1","Empresa: Sura","Monitoreo de Recargas","Sura")
-							+clientes("img/cliente/entel-infra.jpg","modal-2","Empresa: Entel","Monitoreo de Recargas","Entel")
-							+clientes("img/cliente/upc-infra.jpg","modal-3","Empresa: UPC","Monitoreo de Recargas","UPC")
-							+clientes("img/cliente/inkafarma-infra2.jpg","modal-4","Empresa: InkaFarma","Monitoreo de Recargas","InkaFarma")
-							+clientes("img/cliente/falabella-infra.jpg","modal-1","Empresa: Banco Falabella","Monitoreo de Recargas","Banco Falabella")
-							+clientes("img/cliente/entel-infra.jpg","modal-2","Empresa: Entel","Monitoreo de Recargas","Entel")
-							+clientes("img/cliente/rpp-infra.jpg","modal-3","Empresa: Grupo RPP","Monitoreo de Recargas","Grupo RPP")
+						.carousel.center
+							+clientes("img/cliente/sura-infra.jpg","modal-1","Sura",1,"Sura","Proyecto ETL Data Warehouse con Datastage")
+							+clientes("img/cliente/entel-infra.jpg","modal-2","Entel",4,"Entel","Proyectos en Inteligencia de Negocios","Proyecto Normalización de Direcciones CRM y RETAIL.","Proyecto de Data Warehouse","Proyecto Mejoras en Migración a Exadata", "Proyecto de optimización Sistema de información Osiptel (ODI)")
+							+clientes("img/cliente/upc-infra.jpg","modal-3","UPC",1,"UPC"," ")
+							+clientes("img/cliente/inkafarma-infra2.jpg","modal-4","Empresa: InkaFarma",1,"InkaFarma"," ")
+							+clientes("img/cliente/falabella-infra.jpg","modal-1","Banco Falabella",1,"Banco Falabella"," ")
+							+clientes("img/cliente/rpp-infra.jpg","modal-3","Grupo RPP",1,"Grupo RPP"," ")
 
 			section.section
 				.container.center-align
@@ -218,20 +216,20 @@ html(lang="en")
 											li
 												img(src="img/partner/PARTNER_IBM.jpg")
 												.caption
-													h3 IBM
+													//h3 IBM
 											li
 												img(src="img/partner/TABLEU.jpg")
 												.caption
-													h3 TABLEU
+													//h3 TABLEU
 											li
 												img(src="img/partner/ORACLE.jpg")
 												.caption
-													h3 ORACLE
+													//h3 ORACLE
 
 			section.section
 				.container
 					.section-cliente
-						.row
+						.row.pdt-8
 							.col.s12.offset-l1.l5.center-align
 								h3.txt-negro CONTÁCTANOS
 								P Estamos listos para ayudarte. Si requieres información adicional sobre nuestros servicios, o deseconversar con nosotros sobre los proyectos o soluciones que necesites implementar en tu negocio, no dudes en ponerte en contacto con nosotros. 
@@ -298,26 +296,31 @@ html(lang="en")
 												button.btn.waves-effet.waves-light(type="submit" name="action") Enviar
 													i.material-icons.right send
 
-						.container.center-align.icon-contacto
+						.center-align.icon-contacto
 							.row
-								.col.offset-l2.l3.s6
+								.red_contacto
 									a(href="mailto:comunicaciones@vooxell.com" target="_blank")
 										i.mail(data-icon="ei-envelope")
-									span.mail-txt 
-										b comunicaciones@vooxell.com
+										span comunicaciones@vooxell.com
 
-								.col.l1.s6
-									a(href="" target="_blank")
+									a(href="http://caniuse.com/#feat=flexbox" target="_blank")
 										i.twitter(data-icon="ei-sc-twitter")
 
-								.col.l1.s6
 									a(href="" target="_blank")
 										i.linkedin(data-icon="ei-sc-linkedin")
 
-								.col.l3.s5.s6
-									i.material-icons.cell call
-									span.cell-txt 
-										b +511 1721 6755
+									a(href="" target="_blank")
+										i.material-icons.cell call
+										span +511 1721 6755
+
+									a(href="" target="_blank")
+										i.material-icons.cell call
+										span +511 1721 6755
+
+									a(href="" target="_blank")
+										i.material-icons.cell call
+										span +511 1721 6755
+
 	
 		script(src="js/jquery.js")
 		script(src="https://cdn.jsdelivr.net/evil-icons/1.8.0/evil-icons.min.js")

@@ -193,7 +193,6 @@
 		p{
 			color:white;
 		}
-
 	}
 	section:nth-child(4){
 		span{
@@ -232,7 +231,6 @@
 			margin-bottom: 0;
 			padding-top: 0;
 		}
-
 		p{
 			color:black;
 		}
@@ -436,11 +434,12 @@
 .carousel{
 	z-index:3;
 	.carousel-item{
+		top:-23%;
 		img{
 			height: 90%;
 			border:1px solid $bg-verde;
 			box-shadow: 1px 1px 1px $bg-verde;
-			opacity: 0.5;
+			//opacity: 0.7;
 		}
 		.nombre-cliente{
 			position: absolute;
@@ -460,6 +459,15 @@
 			height: 150%;
 			padding: 5%;
 			z-index:1000;
+		}
+	}
+	.modal-content{
+		.lista{
+			padding-left: 20px;
+			li{
+				list-style-image: url("../img/vooxel/faviconSinFondo.ico");
+				font-size: 1rem;
+			}
 		}
 	}
 	.carousel-item:hover .modal-trigger{
@@ -538,14 +546,36 @@
 		}
 	}
 }
-.red{
-	color:$bg-verde;
+
+.red_contacto{
+	padding-top:20%;
+	display:flex;
+	justify-content: space-between;
+	a{
+		display: flex;
+		align-items: stretch;
+	}
+
 }
 .icon-contacto{
+	width:100%;
+	z-index:1000;
+	a{
+		z-index:1002;
+		color:black;
+		i{
+		color:black;
+		}	
+	}
+	a:hover i, a:hover span{
+		
+		color:$bg-verde;
+		margin-bottom: 5px;
+	}
 	.icon{
 		display: inline-block;
-		width:4rem;
-		height: 4rem;
+		width:2rem;
+		height: 1.5rem;
 		color:black;
 		fill:black;
 	}
@@ -554,13 +584,10 @@
 		fill:$txt-verde;		
 	}
 	.cell{
-		font-size: 3rem;
+		font-size: 1.5rem;
 	}
 	.cell:hover{
 		color:$txt-verde;
-	}
-	.mail-txt, .cell-txt{
-		display: block;
 	}
 }
 
