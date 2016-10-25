@@ -6883,7 +6883,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.3; }
 
   .pd-8, .pd-2, .pd-lr-4, .mg-2 {
-    padding: 0%;
+    padding: 2%;
     margin: 0%; }
 
   .mg-responsive-5 {
@@ -6925,6 +6925,9 @@ h1, h2, h3, h4, h5, h6 {
       left: 0.05rem; }
 
   .Numero {
-    font-size: 1rem; } }
+    font-size: 1rem; }
+
+  .carousel .carousel-item .modal-trigger {
+    display: inline-block; } }
 
 /*# sourceMappingURL=main.css.map */
