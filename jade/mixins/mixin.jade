@@ -27,18 +27,48 @@ mixin check(p)
 
 mixin pilar(image,h4,p1,p2,p3)
 	.row
-		.slide__text
-			.row
-				img.responsive-img.ico-img.z-depth-2(src=image)
-			.row
-				h4.sub-title=h4
-				p=p1
-				p=p2
-				p=p3
+		a(href="#").ico-img
+			img.responsive-img.circle(src=image)
+	.row
+		h4.sub-title=h4
+		p=p1
+		p=p2
+		p=p3
 
-mixin perfil(img,name,p,h2)
+mixin perfil(img,name,p,h2,h6,cel)
 	.mix(class=name)
 		if (p==1)
 			h2=h2
-		else 
-			img.z-depth-3.circle(src=img)
+		else
+			.carta 
+				.lado.frente
+					img.z-depth-3.circle(src=img)
+				.lado.atras
+					.perfil-hover
+						h6=h6
+						p=cel
+
+mixin clientes(src,id,h4,p,span)
+	.carousel-item
+		img.img-cliente(src=src)
+		a.btn.nombre-cliente
+			span=span
+		a.btn.modal-trigger(href="#"+id)
+			span Proyectos
+	.modal(id=id)
+		.modal-content
+			.row
+				.col.s6
+					img.responsive-img(src=src)
+				.col.s6
+					h4=h4
+					p=p
+
+
+
+
+
+
+
+
+

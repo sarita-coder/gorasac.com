@@ -151,12 +151,11 @@
 		display: table;
 		margin:auto;
 		//background: green;
-		padding-top: 30%;
+		padding-top: 18%;
 		.VOOXELL{
 			width: 30rem;
 			height: 10rem;
 			z-index: 1000;
-			opacity: 0.8;
 			-webkit-transition: width .5s, height .5s, margin .5s;
 		}
 	}
@@ -168,64 +167,35 @@
 /* slide layout --------------------------------------------- */
 #particles{
 	width: 100%;
-	height:100vh;
+	height:950vh;
 	position:fixed;
-	opacity:1;
-}
-#particles-js{
-	width: 100%;
-	height:150vh;
-}
-
-// .slide {
-// 	height:100vh;
-//     width: 100%;
-//     position: relative;
-//    	padding: 8% 0;
-// }
-.slide__content {
-    max-width: 1200px;
-    margin: auto;
- /*** Cambiar color **/
-}
-.slide__text {
-    padding: 0% 8%;
-}
-.slide__bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
+	z-index:2;
+	opacity:0.5;
+	//float:left;
 }
 
 /**** Personalizacion de section */
-.slider{
-	height: 100vh;
-		//border:1px solid blue;
-}
 
 #fullpage{
 	section:nth-child(2){
-	//	height: 100vh;
-		//background:$bg-black;
 		h2{
 			color:white;
 		}
 		p{
+			color:white;
 			font-size: 1.2rem;
 		}
 	}	
 	section:nth-child(3){
-	//	height: 100vh;
-		//background:$bg-black;
 		h2{
 			color:white;
 		}
+		p{
+			color:white;
+		}
+
 	}
 	section:nth-child(4){
-		//background: $bg-white;
 		span{
 			color:$bg-verde;
 			font-family:$font-bebas;
@@ -237,8 +207,6 @@
 		}
 	}
 	section:nth-child(5){
-		//background:$bg-verde;
-
 		h2{
 			color:white;
 		}
@@ -250,8 +218,6 @@
 		}
 	}
 	section:nth-child(6){
-	//	height: 100vh;
-		//background: $bg-white;
 		p{
 			color:white;
 		}
@@ -261,20 +227,18 @@
 
 	}
 	section:nth-child(7){
-	//	height: 100vh;
-		background: $bg-black;
 		h2{
 			color:black;
 			margin-bottom: 0;
+			padding-top: 0;
 		}
 
 		p{
-			color:white;
+			color:black;
 		}
 	}
 	section:nth-child(8){
 	    height: 100vh;
-		background:$bg-white;
 		.slider{
 		}
 		h2{
@@ -287,9 +251,6 @@
 	}
 	section:nth-child(9){
 	    height: 100vh;
-		background:$bg-white;
-		.slider{
-		}
 		h3{
 			font-family:$font-bebas;
 		}
@@ -299,13 +260,13 @@
 		}
 	}
 }
-.bg-verde{
-	background:$bg-verde;
-}
+
 /**** texto para el cuerpo y titulo **/
 
 /** SLIDER 1 */
-
+.modal-trigger, .modal{
+	z-index:1000;
+}
 /**  Nuestros servicios **/
 .circle{
 	display:inline-block;
@@ -313,6 +274,7 @@
 	width:3rem;
 	background:$bg-verde;
 	border-radius:50%;
+	z-index:3;
 	.check{
     	position: relative;
    	 	top: 0.2rem;
@@ -320,16 +282,31 @@
     	color:white;
 	}
 }
-/*********  pilares ******/
-.ico-img{
-	height:4rem;
-	width:4rem;
-	border-radius:50%;
+.circle:hover .check{
+	color:$bg-verde;
 }
+.circle:hover{
+	background:black;
+}
+/*********  pilares ******/
+.ico-img{	
+	img{
+		background: white;
+		height:5.5rem;
+		width:5.5rem;
+	}
+}
+.ico-img:hover{
+	img{
+		background:black;
+		z-index:4;
+	}
+}	
 
 /*** Perfiles */
 .Perfiles-js{
 	position:float;
+	z-index:3;
 	right:0;
 	.nav{
 		position: absolute;
@@ -338,6 +315,7 @@
 		ul{
 			li{
 				position: relative;
+				z-index:3;
 				.active{
 					opacity: 1;
 					color:white;
@@ -376,167 +354,168 @@
 	}
 }
 .mix{
-	display: none;	
+	display: none;
+		
 }
 #Container{
 	padding-top:30rem;
-	height:30rem;
+	max-height:30rem;
+	display:flex;
 	.mix{
 		margin:2px;
 		margin-bottom: 5px;
 		position: absolute;
+		z-index: 3;
+		height: 8rem;
+		width: 8rem;
+		margin:auto;
+		-webkit-perspective: 700;
+		.carta{
+			height: 100%;
+			width:100%;
+			position: relative;
+			transform-style: preserve-3d;
+			box-shadow:0px 0px 5px black;
+			border-radius:50%;
+		}
+		.carta:hover{
+			transform: rotateY(180deg);
+			transition: 1s;
+		}
+		.lado{
+			border-radius:50%;
+			width:100%;
+			height: 100%;
+			backface-visibility: hidden;
+			position: absolute;
+			border:2px solid white;
+		}
+		.frente{
+			background: crimson;
+		}
+		.atras{
+			background: $bg-verde;
+			transform: rotateY(180deg);
+		}
 		img{
-			height: 4.5rem;
-    		border: 2px solid white;
-			width: 4.5rem;
+			width:100%;
+			height: 100%;
+		}
+
+   		.perfil-hover{
+   			display: none;
    		}
 	}
-	.consultor:first-child{
-		@include Perfil_Title_tr(40%,40%); 
+	.mix:hover .perfil-hover{
+		display: inline-block;
+		position: relative;
+		top:20%;
+		left: 20%;
+
 	}
-	.consultor:nth-child(2){
-		@include Perfil_Title_tr(10%,48%); 
+	.consultor:first-child, .desarrollo:nth-child(7), .experto:nth-child(13), .ventas:nth-child(19){
+		@include Perfil_Title_tr(50%,50%); 
 	}
-	.consultor:nth-child(3){
+	.consultor:nth-child(2), .desarrollo:nth-child(8), .experto:nth-child(14), .ventas:nth-child(20) {
+		@include Perfil_Title_tr(10%,45%); 
+	}
+	.consultor:nth-child(3), .desarrollo:nth-child(9), .experto:nth-child(15),.ventas:nth-child(21) {
 		@include Perfil_Title_tr(10%,20%); 
 	}
-	.consultor:nth-child(4){
+	.consultor:nth-child(4), .desarrollo:nth-child(10), .experto:nth-child(16),.ventas:nth-child(22) {
 		@include Perfil_Title_tl(10%,20%); 
 	}
-	.consultor:nth-child(5){
+	.consultor:nth-child(5), .desarrollo:nth-child(11), .experto:nth-child(17),.ventas:nth-child(23) {
 		@include Perfil_Title_br(10%,20%); 
 	}
-	.consultor:nth-child(6){
+	.consultor:nth-child(6), .desarrollo:nth-child(12), .experto:nth-child(18),.ventas:nth-child(24) {
 		@include Perfil_Title_bl(10%,20%); 
 	}
-	.desarrollo:nth-child(7){
-		@include Perfil_Title_tr(40%,35%); 
+}
+/***Clientes**/
+.carousel{
+	z-index:3;
+	.carousel-item{
+		img{
+			height: 90%;
+			border:1px solid $bg-verde;
+			box-shadow: 1px 1px 1px $bg-verde;
+			opacity: 0.5;
+		}
+		.nombre-cliente{
+			position: absolute;
+			background: $bg-verde;
+			top:0%;
+			left:0%;
+		}
+		.modal-trigger{
+			display: none;
+			background: $bg-verde;
+			position: absolute;
+			top:50%;
+			left:-5%;
+		}
+		.modal{
+			width: 300%;
+			height: 150%;
+			padding: 5%;
+			z-index:1000;
+		}
 	}
-	.desarrollo:nth-child(8){
-		@include Perfil_Title_tr(17%,48%); 
+	.carousel-item:hover .modal-trigger{
+		display: inline-block;
+		background:black;
+		left:15%;
+		webkit-transition: all 3s;
+
 	}
-	.desarrollo:nth-child(9){
-		@include Perfil_Title_tr(17%,20%); 
+	.carousel-item:hover img{
+		opacity: 1;
+		webkit-transition: all 1s;
+
 	}
-	.desarrollo:nth-child(10){
-		@include Perfil_Title_tl(17%,20%); 
-	}
-	.desarrollo:nth-child(11){
-		@include Perfil_Title_br(17%,20%); 
-	}
-	.desarrollo:nth-child(12){
-		@include Perfil_Title_bl(17%,20%); 
-	}
-	.experto:nth-child(13){
-		@include Perfil_Title_tr(50%,40%); 
-	}
-	.experto:nth-child(14){
-		@include Perfil_Title_tr(17%,48%); 
-	}
-	.experto:nth-child(15){
-		@include Perfil_Title_tr(17%,20%); 
-	}
-	.experto:nth-child(16){
-		@include Perfil_Title_tl(17%,20%); 
-	}
-	.experto:nth-child(17){
-		@include Perfil_Title_br(17%,20%); 
-	}
-	.experto:nth-child(18){
-		@include Perfil_Title_bl(17%,20%); 
-	}
-	.ventas:nth-child(19){
-		@include Perfil_Title_tr(50%,46%); 
-	}
-	.ventas:nth-child(20){
-		@include Perfil_Title_tr(17%,48%); 
-	}
-	.ventas:nth-child(21){
-		@include Perfil_Title_tr(17%,20%); 
-	}
-	.ventas:nth-child(22){
-		@include Perfil_Title_tl(17%,20%); 
-	}
-	.ventas:nth-child(23){
-		@include Perfil_Title_br(17%,20%); 
-	}
-	.ventas:nth-child(24){
-		@include Perfil_Title_bl(17%,20%); 
-	}
+
 }
 
 
-/*** CLIENTES **/
-.section-cliente{
-	h2{
-		padding: 0.5em 0;
-		color:$txt-verde;
-	}
-	.col{
-		.cliente{
-			//background-color:white;
-			border-radius:15px;
-			background-repeat: no-repeat;
-			background-size:100% 100%;
-			height:8rem;
-			width:100%;
-		}
-		.cliente:hover{
-			background-color:white;
-			box-shadow:3px 5px 5px rgba(111, 187, 99, 0.93);
-			transition: all .5s;
-		}
-		.logo-cliente-1{
-			background-image:url('../img/mibanco-logo.png');
-		}
-		.logo-clinte-2{
-			background-image:url('../img/entel-logo.png');
-		}
-		.logo-cliente-3{
-			background-image:url('../img/logo-sura.png');
-		}
-	}
-}
+
 /** Partner **/
-.section-partner{
-	.row{
-		.col{
-			.partner{
-				//background-color:white;
-				background-position: center;
-    			background-repeat: no-repeat;
-				height: 8rem;
-				width: 90%;
-			}
-			.partner:hover{
-			background-color:white;
-			box-shadow:3px 5px 5px rgba(111, 187, 99, 0.93);
-			transition: all .5s;
-			}
-			p{
-				color:$txt-verde;
-			}
-			.part-1{
-				background-image:url('../img/partner/IBM-logo.png');
-				background-size: 100% 100%;
-			}
-			.part-2{
-				background-image:url('../img/partner/Oracle-partner.png');
-				background-size: 80% 70%;
-				
-			}
-			.part-3{
-				background-image:url('../img/partner/tableau_partner.png');
-				background-size: 100% 80%;	
-			}
-		}
-	}
+.contenedor-inicial{
+	float:left;
+
 }
+.tablet{
+   	border: 3px solid #6f6a6a;
+    border-radius: 2rem;
+    padding: 1rem 3rem 2.5rem;
+    background:  rgba(226,226,226,1);
+    position: relative;
+    z-index: 3;
+    box-shadow: 0px 4px 4px 4px #448050;
+    .contenido{
+    	border: 2px solid black;
+    }
+}
+.tablet::before{
+	margin-bottom:1rem;
+	content:"";
+	display:inline-block;
+	width:1rem;
+	height:1rem;
+	background:black;
+	border-radius:50%;
+ }
+.tablet::after{
+	content:"Vooxell";
+	font-weight:bold;
+	color:gray;
+ }	
+
 /* Contactanos */
 #form1, #form2{
 	display:none;
 	position:absolute;
-	top:10%;
+	top:3%;
 	left:0;
 	z-index:1000;
 	width:100%;
@@ -584,3 +563,5 @@
 		display: block;
 	}
 }
+
+

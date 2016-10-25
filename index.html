@@ -28,12 +28,15 @@
             <spam class="nav-text">NUESTROS PILARES </spam><span class="subir">0</span><span class="bajar">3</span></a>
         </li>
         <li class="menu__item"><a href="#slide-5" class="menu__link link-5">
+            <spam class="nav-text">RECURSOS HUMANOS </spam><span class="subir">0</span><span class="bajar">4</span></a>
+        </li>
+        <li class="menu__item"><a href="#slide-6" class="menu__link link-5">
             <spam class="nav-text">CLIENTE </spam><span class="subir">0</span><span class="bajar">4</span></a>
         </li>
-        <li class="menu__item"><a href="#slide-6" class="menu__link link-6">
+        <li class="menu__item"><a href="#slide-7" class="menu__link link-6">
             <spam class="nav-text">PARTNER </spam><span class="subir">0</span><span class="bajar">5</span></a>
         </li>
-        <li class="menu__item"><a href="#slide-7" class="menu__link link-7">
+        <li class="menu__item"><a href="#slide-8" class="menu__link link-7">
             <spam class="nav-text">CONTACTO </spam><span class="subir">0</span><span class="bajar">6</span></a>
         </li>
         <li class="menu__item"><a target="_blank" class="red-social"><i data-icon="ei-sc-twitter"></i></a>
@@ -41,7 +44,7 @@
         <li class="menu__item"><a target="_blank" class="red-social"><i data-icon="ei-sc-facebook"></i></a>
         </li>
       </ul>
-      <div id="menu-des" class="menu-bar">
+      <div id="menu-des" onclick="Materialize.showStaggeredList('#main-nav.main-nav')" class="menu-bar">
         <div class="uno bar"></div>
         <div class="dos bar"></div>
         <div class="tres bar"></div>
@@ -62,14 +65,10 @@
     <div id="fullpage">
       <div id="particles"></div>
       <section class="section">
-        <div class="container">
-          <div class="row">
-            <div class="col offset-s1 s10 offset-s1">
-              <div class="logo scrollflow -pop">
-                <div class="logo-vooxel center-align"><img src="img/vooxel/LOGO_VOOXELL_verde_RGB_WEB.png" class="VOOXELL"/>
-                  <p class="logo-text">You have data, <span class="w-500">we give you a new dimension	</span></p>
-                </div>
-              </div>
+        <div class="row">
+          <div class="col s12 logo">
+            <div class="logo-vooxel center-align"><img src="img/vooxel/LOGO_VOOXELL_verde_RGB_WEB.png" class="VOOXELL"/>
+              <p class="logo-text">You have data,<span class="w-500">we give you a new dimension</span></p>
             </div>
           </div>
         </div>
@@ -77,9 +76,10 @@
       <section class="section">
         <div class="container">
           <div data-scrollflow-start="0" data-scrollflow-distance="100" data-scrollflow-amount="200" class="row scrollflow -slide-bottom">
-            <div class="col offset-l6 l6 s12 center-align pd-2">
+            <div class="col l6 s12 center-align pd-2"><img src="img/vooxel/vooxell-contacto-logo.svg"/></div>
+            <div class="col l6 s12 center-align pd-2">
               <h2 class="bebas">QUIENES SOMOS</h2>
-              <p>Somos un equipo de profesionales especializados en inteligencia de negocios. Nuestro trabajo se centra en el análisis de la data que tienen nuestros clientes, para encontrar una nueva dimensión entre su negocio y la tecnología, que será de gran valor para manejar información y conocimiento, adecuado y oportuno para la toma de decisiones.</p>
+              <p>Somos un equipo de profesionales especializados en inteligencia de negocio. Nuestro trabajo se centra en el análisis de la data que tienen nuestros clientes, para encontrar una nueva dimensión entre su negocio y la tecnología, que será de gran valor para manejar información y conocimiento, adecuado y oportuno para la toma de decisiones.</p>
             </div>
           </div>
         </div>
@@ -87,7 +87,7 @@
       <section class="section">
         <div class="row">
           <div class="slide">
-            <div data-scrollflow-start="0" data-scrollflow-distance="100" data-scrollflow-amount="200" class="scrollflow -slide-bottom">
+            <div data-scrollflow-start="0" data-scrollflow-distance="100" data-scrollflow-amount="200" class="pd-lr-4 scrollflow -slide-bottom">
               <div class="row">
                 <div class="col offset-l1 s11 l5 left-align">
                   <h2>NUESTROS SERVICIOS</h2>
@@ -99,7 +99,7 @@
                       <div class="pd-2">
                         <div class="col s2"><span class="circle"><i class="material-icons check">done</i></span></div>
                         <div class="col s10">
-                          <p>Inteligencia de Negocios (BigData, Aceleradores</p>
+                          <p>Inteligencia de Negocios (BigData, Aceleradores).</p>
                         </div>
                       </div>
                     </div>
@@ -107,7 +107,7 @@
                       <div class="pd-2">
                         <div class="col s2"><span class="circle"><i class="material-icons check">done</i></span></div>
                         <div class="col s10">
-                          <p>Desarrollo Ágil</p>
+                          <p>Desarrollo Ágil.</p>
                         </div>
                       </div>
                     </div>
@@ -115,7 +115,7 @@
                       <div class="pd-2">
                         <div class="col s2"><span class="circle"><i class="material-icons check">done</i></span></div>
                         <div class="col s10">
-                          <p>Consultoría experta (Migración, BD, Assessment</p>
+                          <p>Consultoría experta (Migración, BD, Assessment).</p>
                         </div>
                       </div>
                     </div>
@@ -125,35 +125,41 @@
             </div>
           </div>
           <div class="slide">
-            <div class="row">
-              <div class="col offset-l1 s12 l5 left-align scrollflow -slide-right"><span class="Numero">01.</span>
-                <h2>Inteligencia de Negocios </h2>
-                <h4>(BigData, Aceleradores)</h4>
-                <P> Decisiones oportunas para lograr una ventaja competitiva.</P>
-              </div>
-              <div class="col s12 l5 offset-l1 left-align scrollflow -slide-left -opacity">
-                <div class="row">
-                  <div class="row">
-                    <div class="pd-2">
-                      <div class="col s2"><span class="circle"><i class="material-icons check">done</i></span></div>
-                      <div class="col s10">
-                        <p>Un know-how estructural y operativo diferente y un grupo humano de gran sinergia, creativo, innovador y multidisciplinario.</p>
-                      </div>
-                    </div>
+            <div class="pd-lr-4">
+              <div class="row pdt-2">
+                <div class="col offset-l1 s12 l5 left-align scrollflow">
+                  <div class="-slide-right"><span class="Numero">01.</span>
+                    <h2>Inteligencia de Negocios</h2>
+                    <h4>(BigData, Aceleradores)</h4>
+                    <P> Decisiones oportunas para lograr una ventaja competitiva.</P>
                   </div>
-                  <div class="row">
-                    <div class="pd-2">
-                      <div class="col s2"><span class="circle"><i class="material-icons check">done</i></span></div>
-                      <div class="col s10">
-                        <p>Metodologías no tradicionales, flexibles ante nuevos requerimientos y que se adaptan fácilmente a las expectativas que usted tiene.</p>
+                </div>
+                <div class="col s12 l5 offset-l1 left-align scrollflow">
+                  <div class="-slide-left -opacity">
+                    <div class="row">
+                      <div class="row">
+                        <div class="pd-2">
+                          <div class="col s2"><span class="circle"><i class="material-icons check">done</i></span></div>
+                          <div class="col s10">
+                            <p>Un know-how estructural y operativo diferente y un grupo humano de gran sinergia, creativo, innovador y multidisciplinario.</p>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="pd-2">
-                      <div class="col s2"><span class="circle"><i class="material-icons check">done</i></span></div>
-                      <div class="col s10">
-                        <p>Tener entregables a corto plazo que garanticen un producto final eficaz y eficiente, es nuestro compromiso.</p>
+                      <div class="row">
+                        <div class="pd-2">
+                          <div class="col s2"><span class="circle"><i class="material-icons check">done</i></span></div>
+                          <div class="col s10">
+                            <p>Metodologías no tradicionales, flexibles ante nuevos requerimientos y que se adaptan fácilmente a las expectativas que usted tiene.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="pd-2">
+                          <div class="col s2"><span class="circle"><i class="material-icons check">done</i></span></div>
+                          <div class="col s10">
+                            <p>Tener entregables a corto plazo que garanticen un producto final eficaz y eficiente, es nuestro compromiso.</p>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -162,34 +168,36 @@
             </div>
           </div>
           <div class="slide">
-            <div class="row">
-              <div class="col s12 offset-l1 l5 left-align scrollflow -slide-right -opacity"><span class="Numero">02.</span>
-                <h2>Desarrollo Ágil</h2>
-                <P> Un nuevo enfoque de revoluciona el desarrollo del software.</P>
-              </div>
-              <div class="col s12 l5 offset-l1 left-align scrollflow -slide-left -opacity">
-                <div class="row">
+            <div class="pd-lr-4">
+              <div class="row pdt-2">
+                <div class="col s12 offset-l1 l5 left-align scrollflow -slide-right -opacity"><span class="Numero">02.</span>
+                  <h2>Desarrollo Ágil</h2>
+                  <P> Un nuevo enfoque de revoluciona el desarrollo del software.</P>
+                </div>
+                <div class="col s12 l5 offset-l1 left-align scrollflow -slide-left -opacity">
                   <div class="row">
-                    <div class="pd-2">
-                      <div class="col s2"><span class="circle"><i class="material-icons check">done</i></span></div>
-                      <div class="col s10">
-                        <p>Almacenar y gestionar gran cantidad de datos, para transformarlos en información útil y confiable.</p>
+                    <div class="row">
+                      <div class="pd-2">
+                        <div class="col s2"><span class="circle"><i class="material-icons check">done</i></span></div>
+                        <div class="col s10">
+                          <p>Almacenar y gestionar gran cantidad de datos, para transformarlos en información útil y confiable.</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="pd-2">
-                      <div class="col s2"><span class="circle"><i class="material-icons check">done</i></span></div>
-                      <div class="col s10">
-                        <p>Estamos dispuestos a brindarle información segura y oportuna, que le ayudará no sólo a optimizar sus procesos de toma de decisiones.</p>
+                    <div class="row">
+                      <div class="pd-2">
+                        <div class="col s2"><span class="circle"><i class="material-icons check">done</i></span></div>
+                        <div class="col s10">
+                          <p>Estamos dispuestos a brindarle información segura y oportuna, que le ayudará no sólo a optimizar sus procesos de toma de decisiones.</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="pd-2">
-                      <div class="col s2"><span class="circle"><i class="material-icons check">done</i></span></div>
-                      <div class="col s10">
-                        <p>Nuestra mirada 360° nos permite darle una nueva dimensión a su data, nuevas perspectivas de solución que elevarán la productividad y competitividad de su negocio.</p>
+                    <div class="row">
+                      <div class="pd-2">
+                        <div class="col s2"><span class="circle"><i class="material-icons check">done</i></span></div>
+                        <div class="col s10">
+                          <p>Nuestra mirada 360° nos permite darle una nueva dimensión a su data, nuevas perspectivas de solución que elevarán la productividad y competitividad de su negocio.</p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -198,35 +206,37 @@
             </div>
           </div>
           <div class="slide">
-            <div class="row">
-              <div class="col s12 offset-l1 l5 left-align vh-100 scrollflow -slide-right"><span class="Numero">03.</span>
-                <h2>Consultoría experta </h2>
-                <h4>(Migración, BD, Assessment)</h4>
-                <P> Nuestro activo más importante a su servicio</P>
-              </div>
-              <div class="col s12 l5 offset-l1 left-align vh-100 scrollflow -slide-left -opacity">
-                <div class="row pd-8">
-                  <div class="row">
-                    <div class="pd-2">
-                      <div class="col s2"><span class="circle"><i class="material-icons check">done</i></span></div>
-                      <div class="col s10">
-                        <p>Almacenar y gestionar gran cantidad de datos, para transformarlos en información útil y confiable.</p>
+            <div class="pd-lr-4">
+              <div class="row pdt-2">
+                <div class="col s12 offset-l1 l5 left-align vh-100 scrollflow -slide-right"><span class="Numero">03.</span>
+                  <h2>Consultoría experta </h2>
+                  <h4>(Migración, BD, Assessment)</h4>
+                  <P> Nuestro activo más importante a su servicio</P>
+                </div>
+                <div class="col s12 l5 offset-l1 left-align vh-100 scrollflow -slide-left -opacity">
+                  <div class="row pd-8">
+                    <div class="row">
+                      <div class="pd-2">
+                        <div class="col s2"><span class="circle"><i class="material-icons check">done</i></span></div>
+                        <div class="col s10">
+                          <p>Almacenar y gestionar gran cantidad de datos, para transformarlos en información útil y confiable.</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="pd-2">
-                      <div class="col s2"><span class="circle"><i class="material-icons check">done</i></span></div>
-                      <div class="col s10">
-                        <p>Estamos dispuestos a brindarle información segura y oportuna, que le ayudará no sólo a optimizar sus procesos de toma de decisiones.</p>
+                    <div class="row">
+                      <div class="pd-2">
+                        <div class="col s2"><span class="circle"><i class="material-icons check">done</i></span></div>
+                        <div class="col s10">
+                          <p>Estamos dispuestos a brindarle información segura y oportuna, que le ayudará no sólo a optimizar sus procesos de toma de decisiones.</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="pd-2">
-                      <div class="col s2"><span class="circle"><i class="material-icons check">done</i></span></div>
-                      <div class="col s10">
-                        <p>Nuestra mirada 360° nos permite darle una nueva dimensión a su data, nuevas perspectivas de solución que elevarán la productividad y competitividad de su negocio.</p>
+                    <div class="row">
+                      <div class="pd-2">
+                        <div class="col s2"><span class="circle"><i class="material-icons check">done</i></span></div>
+                        <div class="col s10">
+                          <p>Nuestra mirada 360° nos permite darle una nueva dimensión a su data, nuevas perspectivas de solución que elevarán la productividad y competitividad de su negocio.</p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -237,46 +247,36 @@
         </div>
       </section>
       <section class="section">
-        <div class="container">
-          <div data-scrollflow-start="0" data-scrollflow-distance="100" data-scrollflow-amount="200" class="row center-align scrollflow -slide-bottom">
+        <div class="container center-align">
+          <div class="row">
             <h2>NUESTROS PILARES</h2>
+          </div>
+          <div class="row pd-2">
             <div class="col s4 scrollflow -slide-bottom -opacity">
+              <div class="row"><a href="#" class="ico-img"><img src="img/pilar/experiencia.png" class="responsive-img circle"/></a></div>
               <div class="row">
-                <div class="slide__text">
-                  <div class="row"><img src="img/ico-tuerca.png" class="responsive-img ico-img z-depth-2"/></div>
-                  <div class="row">
-                    <h4 class="sub-title">EXPERIENCIA</h4>
-                    <p>Confianza</p>
-                    <p>Conocimiento</p>
-                    <p>Especialización</p>
-                  </div>
-                </div>
+                <h4 class="sub-title">EXPERIENCIA</h4>
+                <p>Confianza</p>
+                <p>Conocimiento</p>
+                <p>Especialización</p>
               </div>
             </div>
             <div class="col s4 scrollflow -slide-top -opacity">
+              <div class="row"><a href="#" class="ico-img"><img src="img/pilar/excelencia.png" class="responsive-img circle"/></a></div>
               <div class="row">
-                <div class="slide__text">
-                  <div class="row"><img src="img/ico-tuerca.png" class="responsive-img ico-img z-depth-2"/></div>
-                  <div class="row">
-                    <h4 class="sub-title">EXCELENCIA</h4>
-                    <p>Calidad</p>
-                    <p>Creatividad</p>
-                    <p>Innovación</p>
-                  </div>
-                </div>
+                <h4 class="sub-title">EXCELENCIA</h4>
+                <p>Calidad</p>
+                <p>Creatividad</p>
+                <p>Innovación</p>
               </div>
             </div>
             <div class="col s4 scrollflow -slide-bottom -opacity">
+              <div class="row"><a href="#" class="ico-img"><img src="img/pilar/probando.png" class="responsive-img circle"/></a></div>
               <div class="row">
-                <div class="slide__text">
-                  <div class="row"><img src="img/ico-tuerca.png" class="responsive-img ico-img z-depth-2"/></div>
-                  <div class="row">
-                    <h4 class="sub-title">EFICIENCIA</h4>
-                    <p>Competividad</p>
-                    <p>Compromiso</p>
-                    <p>Productividad</p>
-                  </div>
-                </div>
+                <h4 class="sub-title">EFICIENCIA</h4>
+                <p>Competividad</p>
+                <p>Compromiso</p>
+                <p>Productividad</p>
               </div>
             </div>
           </div>
@@ -284,83 +284,344 @@
       </section>
       <section class="section">
         <div class="container Perfiles-js">
+          <div class="contenedor-inicial center-align pd-4">
+            <h2>REFERENCIAS DEL EQUIPO</h2>
+            <p>Nuestro equipo de inteligencia es una garantía de estabilidad y experiencia en el manejo de sus problemas.</p>
+          </div>
           <div class="nav">
             <ul class="right-align">
-              <li class="lista"><a data-filter=".consultor" class="btn-perfil filter active">CONSULTOR</a><span class="linea"></span></li>
-              <li><a data-filter=".desarrollo" class="btn-perfil filter">DESARROLLO</a><span class="linea"></span></li>
-              <li><a data-filter=".experto" class="btn-perfil filter">EXPERTO</a><span class="linea"></span></li>
               <li><a data-filter=".ventas" class="btn-perfil filter">VENTAS</a><span class="linea"></span></li>
+              <li><a data-filter=".experto" class="btn-perfil filter">EXPERTO</a><span class="linea"></span></li>
+              <li><a data-filter=".consultor" class="btn-perfil filter">CONSULTOR</a><span class="linea"></span></li>
+              <li><a data-filter=".desarrollo" class="btn-perfil filter">DESARROLLO</a><span class="linea"></span></li>
+              <li><a data-filter=".references" class="btn-perfil-referen">REFERENCIAS</a><span class="linea"></span></li>
             </ul>
           </div>
           <div id="Container" class="row">
             <div class="mix consultor">
               <h2>Consultor</h2>
             </div>
-            <div class="mix consultor"><img src="img/perfil/consultor/alexis-christoforou.jpg" class="z-depth-3 circle"/>
+            <div class="mix consultor">
+              <div class="carta"> 
+                <div class="lado frente"><img src="img/perfil/consultor/alexis-christoforou.jpg" class="z-depth-3 circle"/></div>
+                <div class="lado atras">
+                  <div class="perfil-hover">
+                    <h6>Eduardo</h6>
+                    <p>Cel. 992645479</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="mix consultor"><img src="img/perfil/consultor/alexis-christoforou.jpg" class="z-depth-3 circle"/>
+            <div class="mix consultor">
+              <div class="carta"> 
+                <div class="lado frente"><img src="img/perfil/consultor/alexis-christoforou.jpg" class="z-depth-3 circle"/></div>
+                <div class="lado atras">
+                  <div class="perfil-hover">
+                    <h6>Cristian</h6>
+                    <p>Cel. 992645479</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="mix consultor"><img src="img/perfil/consultor/alexis-christoforou.jpg" class="z-depth-3 circle"/>
+            <div class="mix consultor">
+              <div class="carta"> 
+                <div class="lado frente"><img src="img/perfil/consultor/alexis-christoforou.jpg" class="z-depth-3 circle"/></div>
+                <div class="lado atras">
+                  <div class="perfil-hover">
+                    <h6>Oscar</h6>
+                    <p>Cel. 992645479</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="mix consultor"><img src="img/perfil/consultor/alexis-christoforou.jpg" class="z-depth-3 circle"/>
+            <div class="mix consultor">
+              <div class="carta"> 
+                <div class="lado frente"><img src="img/perfil/consultor/alexis-christoforou.jpg" class="z-depth-3 circle"/></div>
+                <div class="lado atras">
+                  <div class="perfil-hover">
+                    <h6>Julio</h6>
+                    <p>Cel. 992645479</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="mix consultor"><img src="img/perfil/consultor/alexis-christoforou.jpg" class="z-depth-3 circle"/>
+            <div class="mix consultor">
+              <div class="carta"> 
+                <div class="lado frente"><img src="img/perfil/consultor/alexis-christoforou.jpg" class="z-depth-3 circle"/></div>
+                <div class="lado atras">
+                  <div class="perfil-hover">
+                    <h6>Joan</h6>
+                    <p>Cel. 992645479</p>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="mix desarrollo">
               <h2>Desarrollo</h2>
             </div>
-            <div class="mix desarrollo"><img src="img/perfil/desarrollo/neil-aronson.jpg" class="z-depth-3 circle"/>
+            <div class="mix desarrollo">
+              <div class="carta"> 
+                <div class="lado frente"><img src="img/perfil/desarrollo/neil-aronson.jpg" class="z-depth-3 circle"/></div>
+                <div class="lado atras">
+                  <div class="perfil-hover">
+                    <h6>Eduardo</h6>
+                    <p>Cel. 992645479</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="mix desarrollo"><img src="img/perfil/desarrollo/neil-aronson.jpg" class="z-depth-3 circle"/>
+            <div class="mix desarrollo">
+              <div class="carta"> 
+                <div class="lado frente"><img src="img/perfil/desarrollo/neil-aronson.jpg" class="z-depth-3 circle"/></div>
+                <div class="lado atras">
+                  <div class="perfil-hover">
+                    <h6>Eduardo</h6>
+                    <p>Cel. 992645479</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="mix desarrollo"><img src="img/perfil/desarrollo/neil-aronson.jpg" class="z-depth-3 circle"/>
+            <div class="mix desarrollo">
+              <div class="carta"> 
+                <div class="lado frente"><img src="img/perfil/desarrollo/neil-aronson.jpg" class="z-depth-3 circle"/></div>
+                <div class="lado atras">
+                  <div class="perfil-hover">
+                    <h6>Eduardo</h6>
+                    <p>Cel. 992645479</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="mix desarrollo"><img src="img/perfil/desarrollo/neil-aronson.jpg" class="z-depth-3 circle"/>
+            <div class="mix desarrollo">
+              <div class="carta"> 
+                <div class="lado frente"><img src="img/perfil/desarrollo/neil-aronson.jpg" class="z-depth-3 circle"/></div>
+                <div class="lado atras">
+                  <div class="perfil-hover">
+                    <h6>Eduardo</h6>
+                    <p>Cel. 992645479</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="mix desarrollo"><img src="img/perfil/desarrollo/neil-aronson.jpg" class="z-depth-3 circle"/>
+            <div class="mix desarrollo">
+              <div class="carta"> 
+                <div class="lado frente"><img src="img/perfil/desarrollo/neil-aronson.jpg" class="z-depth-3 circle"/></div>
+                <div class="lado atras">
+                  <div class="perfil-hover">
+                    <h6>Eduardo</h6>
+                    <p>Cel. 992645479</p>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="mix experto">
               <h2>Experto</h2>
             </div>
-            <div class="mix experto"><img src="img/perfil/experto/julien-tissandier.jpg" class="z-depth-3 circle"/>
+            <div class="mix experto">
+              <div class="carta"> 
+                <div class="lado frente"><img src="img/perfil/experto/julien-tissandier.jpg" class="z-depth-3 circle"/></div>
+                <div class="lado atras">
+                  <div class="perfil-hover">
+                    <h6>Eduardo</h6>
+                    <p>Cel. 992645479</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="mix experto"><img src="img/perfil/experto/julien-tissandier.jpg" class="z-depth-3 circle"/>
+            <div class="mix experto">
+              <div class="carta"> 
+                <div class="lado frente"><img src="img/perfil/experto/julien-tissandier.jpg" class="z-depth-3 circle"/></div>
+                <div class="lado atras">
+                  <div class="perfil-hover">
+                    <h6>Eduardo</h6>
+                    <p>Cel. 992645479</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="mix experto"><img src="img/perfil/experto/julien-tissandier.jpg" class="z-depth-3 circle"/>
+            <div class="mix experto">
+              <div class="carta"> 
+                <div class="lado frente"><img src="img/perfil/experto/julien-tissandier.jpg" class="z-depth-3 circle"/></div>
+                <div class="lado atras">
+                  <div class="perfil-hover">
+                    <h6>Eduardo</h6>
+                    <p>Cel. 992645479</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="mix experto"><img src="img/perfil/experto/julien-tissandier.jpg" class="z-depth-3 circle"/>
+            <div class="mix experto">
+              <div class="carta"> 
+                <div class="lado frente"><img src="img/perfil/experto/julien-tissandier.jpg" class="z-depth-3 circle"/></div>
+                <div class="lado atras">
+                  <div class="perfil-hover">
+                    <h6>Eduardo</h6>
+                    <p>Cel. 992645479</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="mix experto"><img src="img/perfil/experto/julien-tissandier.jpg" class="z-depth-3 circle"/>
+            <div class="mix experto">
+              <div class="carta"> 
+                <div class="lado frente"><img src="img/perfil/experto/julien-tissandier.jpg" class="z-depth-3 circle"/></div>
+                <div class="lado atras">
+                  <div class="perfil-hover">
+                    <h6>Eduardo</h6>
+                    <p>Cel. 992645479</p>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="mix ventas">
               <h2>VENTAS</h2>
             </div>
-            <div class="mix ventas"><img src="img/perfil/ventas/benjamin-merritt.jpg" class="z-depth-3 circle"/>
+            <div class="mix ventas">
+              <div class="carta"> 
+                <div class="lado frente"><img src="img/perfil/ventas/benjamin-merritt.jpg" class="z-depth-3 circle"/></div>
+                <div class="lado atras">
+                  <div class="perfil-hover">
+                    <h6>Eduardo</h6>
+                    <p>Cel. 992645479</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="mix ventas"><img src="img/perfil/ventas/benjamin-merritt.jpg" class="z-depth-3 circle"/>
+            <div class="mix ventas">
+              <div class="carta"> 
+                <div class="lado frente"><img src="img/perfil/ventas/benjamin-merritt.jpg" class="z-depth-3 circle"/></div>
+                <div class="lado atras">
+                  <div class="perfil-hover">
+                    <h6>Eduardo</h6>
+                    <p>Cel. 992645479</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="mix ventas"><img src="img/perfil/ventas/benjamin-merritt.jpg" class="z-depth-3 circle"/>
+            <div class="mix ventas">
+              <div class="carta"> 
+                <div class="lado frente"><img src="img/perfil/ventas/benjamin-merritt.jpg" class="z-depth-3 circle"/></div>
+                <div class="lado atras">
+                  <div class="perfil-hover">
+                    <h6>Eduardo</h6>
+                    <p>Cel. 992645479</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="mix ventas"><img src="img/perfil/ventas/benjamin-merritt.jpg" class="z-depth-3 circle"/>
+            <div class="mix ventas">
+              <div class="carta"> 
+                <div class="lado frente"><img src="img/perfil/ventas/benjamin-merritt.jpg" class="z-depth-3 circle"/></div>
+                <div class="lado atras">
+                  <div class="perfil-hover">
+                    <h6>Eduardo</h6>
+                    <p>Cel. 992645479</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="mix ventas"><img src="img/perfil/ventas/benjamin-merritt.jpg" class="z-depth-3 circle"/>
+            <div class="mix ventas">
+              <div class="carta"> 
+                <div class="lado frente"><img src="img/perfil/ventas/benjamin-merritt.jpg" class="z-depth-3 circle"/></div>
+                <div class="lado atras">
+                  <div class="perfil-hover">
+                    <h6>Eduardo</h6>
+                    <p>Cel. 992645479</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <section class="section">
         <div class="container center-align">
-          <div class="row section-cliente scrollflow -pop">
+          <div class="row section-cliente pd-2">
             <h2 id="slide-5-title" class="title-cliente">NUESTROS CLIENTES</h2>
-            <div class="row">
-              <div class="col s6 l4">
-                <div class="cliente logo-cliente-3"></div>
+            <p>Conoce cómo pensamos, en qué proyectos estamos involucrados, e ideas sobre nuestra visión a futuro.</p>
+            <div class="carousel">
+              <div class="carousel-item"><img src="img/cliente/sura-infra.jpg" class="img-cliente"/><a class="btn nombre-cliente"><span>Sura</span></a><a href="#modal-1" class="btn modal-trigger"><span>Proyectos</span></a></div>
+              <div id="modal-1" class="modal">
+                <div class="modal-content">
+                  <div class="row">
+                    <div class="col s6"><img src="img/cliente/sura-infra.jpg" class="responsive-img"/></div>
+                    <div class="col s6">
+                      <h4>Empresa: Sura</h4>
+                      <p>Monitoreo de Recargas</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="col s6 l4">
-                <div class="cliente logo-cliente-1"></div>
+              <div class="carousel-item"><img src="img/cliente/entel-infra.jpg" class="img-cliente"/><a class="btn nombre-cliente"><span>Entel</span></a><a href="#modal-2" class="btn modal-trigger"><span>Proyectos</span></a></div>
+              <div id="modal-2" class="modal">
+                <div class="modal-content">
+                  <div class="row">
+                    <div class="col s6"><img src="img/cliente/entel-infra.jpg" class="responsive-img"/></div>
+                    <div class="col s6">
+                      <h4>Empresa: Entel</h4>
+                      <p>Monitoreo de Recargas</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="col s6 l4">
-                <div class="cliente logo-clinte-2"></div>
+              <div class="carousel-item"><img src="img/cliente/upc-infra.jpg" class="img-cliente"/><a class="btn nombre-cliente"><span>UPC</span></a><a href="#modal-3" class="btn modal-trigger"><span>Proyectos</span></a></div>
+              <div id="modal-3" class="modal">
+                <div class="modal-content">
+                  <div class="row">
+                    <div class="col s6"><img src="img/cliente/upc-infra.jpg" class="responsive-img"/></div>
+                    <div class="col s6">
+                      <h4>Empresa: UPC</h4>
+                      <p>Monitoreo de Recargas</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item"><img src="img/cliente/inkafarma-infra2.jpg" class="img-cliente"/><a class="btn nombre-cliente"><span>InkaFarma</span></a><a href="#modal-4" class="btn modal-trigger"><span>Proyectos</span></a></div>
+              <div id="modal-4" class="modal">
+                <div class="modal-content">
+                  <div class="row">
+                    <div class="col s6"><img src="img/cliente/inkafarma-infra2.jpg" class="responsive-img"/></div>
+                    <div class="col s6">
+                      <h4>Empresa: InkaFarma</h4>
+                      <p>Monitoreo de Recargas</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item"><img src="img/cliente/falabella-infra.jpg" class="img-cliente"/><a class="btn nombre-cliente"><span>Banco Falabella</span></a><a href="#modal-1" class="btn modal-trigger"><span>Proyectos</span></a></div>
+              <div id="modal-1" class="modal">
+                <div class="modal-content">
+                  <div class="row">
+                    <div class="col s6"><img src="img/cliente/falabella-infra.jpg" class="responsive-img"/></div>
+                    <div class="col s6">
+                      <h4>Empresa: Banco Falabella</h4>
+                      <p>Monitoreo de Recargas</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item"><img src="img/cliente/entel-infra.jpg" class="img-cliente"/><a class="btn nombre-cliente"><span>Entel</span></a><a href="#modal-2" class="btn modal-trigger"><span>Proyectos</span></a></div>
+              <div id="modal-2" class="modal">
+                <div class="modal-content">
+                  <div class="row">
+                    <div class="col s6"><img src="img/cliente/entel-infra.jpg" class="responsive-img"/></div>
+                    <div class="col s6">
+                      <h4>Empresa: Entel</h4>
+                      <p>Monitoreo de Recargas</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item"><img src="img/cliente/rpp-infra.jpg" class="img-cliente"/><a class="btn nombre-cliente"><span>Grupo RPP</span></a><a href="#modal-3" class="btn modal-trigger"><span>Proyectos</span></a></div>
+              <div id="modal-3" class="modal">
+                <div class="modal-content">
+                  <div class="row">
+                    <div class="col s6"><img src="img/cliente/rpp-infra.jpg" class="responsive-img"/></div>
+                    <div class="col s6">
+                      <h4>Empresa: Grupo RPP</h4>
+                      <p>Monitoreo de Recargas</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -370,20 +631,28 @@
         <div class="container center-align">
           <div data-scrollflow-start="0" data-scrollflow-distance="200" data-scrollflow-amount="200" class="row scrollflow -slide-bottom">
             <h2>PARTNER</h2>
-            <div class="tablet">
-              <div class="contenido">
-                <div class="slide-parnet">
-                  <ul class="slides">
-                    <li>
-                      <div class="partner part-1"></div>
-                    </li>
-                    <li>
-                      <div class="partner part-2"></div>
-                    </li>
-                    <li>
-                      <div class="partner part-3"></div>
-                    </li>
-                  </ul>
+            <div class="col s12">
+              <div class="tablet">
+                <div class="contenido">
+                  <div class="slide-parnet slider">
+                    <ul class="slides">
+                      <li><img src="img/partner/PARTNER_IBM.jpg"/>
+                        <div class="caption">
+                          <h3>IBM</h3>
+                        </div>
+                      </li>
+                      <li><img src="img/partner/TABLEU.jpg"/>
+                        <div class="caption">
+                          <h3>TABLEU</h3>
+                        </div>
+                      </li>
+                      <li><img src="img/partner/ORACLE.jpg"/>
+                        <div class="caption">
+                          <h3>ORACLE</h3>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -392,8 +661,8 @@
       </section>
       <section class="section">
         <div class="container">
-          <div class="scrollflow -pop">
-            <div class="row section-cliente">
+          <div class="section-cliente">
+            <div class="row">
               <div class="col s12 offset-l1 l5 center-align">
                 <h3 class="txt-negro">CONTÁCTANOS</h3>
                 <P>Estamos listos para ayudarte. Si requieres información adicional sobre nuestros servicios, o deseconversar con nosotros sobre los proyectos o soluciones que necesites implementar en tu negocio, no dudes en ponerte en contacto con nosotros. </P>
@@ -414,23 +683,17 @@
                         <div class="row">
                           <div class="col s6 input-field">
                             <input id="nombres-frm1" type="text" class="validate"/>
-                            <label for="nombres-frm1">Nombres:</label>
+                            <label for="nombres-frm1">Nombres y Apellidos:</label>
                           </div>
                           <div class="col s6 input-field">
-                            <input id="apellidos-frm1" type="text" class="validate"/>
-                            <label for="apellidos-frm1">Apellidos:</label>
+                            <input id="empresa-frm1" type="text" class="validate"/>
+                            <label for="empresa-frm1">Empresa:</label>
                           </div>
-                        </div>
-                        <div class="row">
-                          <div class="s6 input-field">
-                            <input id="apellidos-frm1" type="text" class="validate"/>
-                          </div>
-                          <label for="empresa-frm1">Empresa:</label>
                           <div class="col s6 input-field">
                             <input id="telefono-frm1" type="text" class="validate"/>
                             <label for="telefono-frm1">Teléfono:</label>
                           </div>
-                          <div class="col s12 input-field">
+                          <div class="col s6 input-field">
                             <input id="email-frm1" type="email" class="validate"/>
                             <label for="email-frm1">Email:</label>
                           </div>
@@ -439,6 +702,8 @@
                               <textarea id="textarea-frm1" class="materialize-textarea"></textarea>
                               <label for="textarea-frm1">Requerimientos:</label>
                             </div>
+                          </div>
+                          <div class="row">
                             <button type="submit" name="action" class="btn waves-effet waves-light">Enviar<i class="material-icons right">send</i></button>
                           </div>
                         </div>

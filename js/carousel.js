@@ -160,7 +160,7 @@
               ' translateZ(' + (options.dist * tween) + 'px)';
             el.style.zIndex = 0;
             if (options.full_width) { tweenedOpacity = 1; }
-            else { tweenedOpacity = 1 - 0.2 * tween; }
+            else { tweenedOpacity = 1 - 0 * tween; }
             el.style.opacity = tweenedOpacity;
             el.style.display = 'block';
           }
@@ -172,7 +172,7 @@
               tweenedOpacity = (i === half && delta < 0) ? 1 - tween : 1;
             } else {
               zTranslation = options.dist * (i * 2 + tween * dir);
-              tweenedOpacity = 1 - 0.2 * (i * 2 + tween * dir);
+              tweenedOpacity = 1 - 0 * (i * 2 + tween * dir);
             }
             // Don't show wrapped items.
             if (!options.no_wrap || center + i < count) {

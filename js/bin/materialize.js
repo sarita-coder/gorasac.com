@@ -7186,7 +7186,7 @@ Picker.extend( 'pickadate', DatePicker )
               tweenedOpacity = (i === half && delta < 0) ? 1 - tween : 1;
             } else {
               zTranslation = options.dist * (i * 2 + tween * dir);
-              tweenedOpacity = 1 - 0.2 * (i * 2 + tween * dir);
+              tweenedOpacity = 1 - 0 * (i * 2 + tween * dir);
             }
             // Don't show wrapped items.
             if (!options.no_wrap || center + i < count) {

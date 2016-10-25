@@ -3,12 +3,17 @@ $('#menu-des').on('click',function(){
 	$('#menu-des').toggleClass('mover')
 })
 
+
+
+
+
+
+
 var logo=false;
 var menu=false;
 var scroll;
 
 $(document).ready(function() {
-
     $(window).scroll(function() {
         scroll = $(window).scrollTop();
         if(scroll> 200){
@@ -57,6 +62,7 @@ $(document).ready(function() {
     });
     /*** perfiles ***/
 	$('#Container').mixItUp();
+
     Materialize.updateTextFields();
     /*** Formularios ***/
     $('#contac-frm1').click(function(){
@@ -72,7 +78,38 @@ $(document).ready(function() {
     	$('#form2').fadeOut(1000);
     })
     /** header **/
-    $('.slide-parnet').slider();
+    $('.slide-parnet').slider({
+        indicators:false,
+        interval:1000
+    });
+
+    $('.carousel').carousel({
+            dist:0,
+            shift:80,
+            padding:10,
+            indicators:true,
+            full_width:true,
+    });
+    $('.modal-trigger').leanModal({
+        opacity: 0.1,
+    });
+
+    /**Perfil**/
+    $('.btn-perfil').click(function(){
+        $('.contenedor-inicial').hide(1000);
+        $('.contenedor-inicial').hide("fast");
+    })
+
+    $('.btn-perfil-referen').click(function(){
+        $('.contenedor-inicial').show(3000);
+        $('.contenedor-inicial').show("slow");
+        $('.mix').hide("fast");
+    })
+
+        
+ 
+
+
 
  });
 
@@ -112,7 +149,7 @@ $(document).ready(function() {
 // });
 
     $('#fullpage').fullpage({
-        sectionsColor: ['#2d2f31', '#2d2f31', '#e0e0e0', '#8ac832', '#2d2f31', '#e0e0e0', '#8ac832', '#e0e0e0'],
+        sectionsColor: ['#2d2f31', '#2d2f31', '#e0e0e0', '#0ed855', '#2d2f31', '#e0e0e0', '#0ed855', '#e0e0e0'],
         anchors: ['slide-1', 'slide-2', 'slide-3', 'slide-4', 'slide-5', 'slide-6', 'slide-7', 'slide-8'],
         menu: '#nav-parallax',
         scrollingSpeed: 1700

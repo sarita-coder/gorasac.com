@@ -20,13 +20,14 @@ html(lang="en")
 				+nav_des(1,"","#slide-2","link-2","0","1","SOBRE NOSOTROS ")
 				+nav_des(1,"","#slide-3","link-3","0","2","SERVICIOS ")
 				+nav_des(1,"","#slide-4","link-4","0","3","NUESTROS PILARES ")
-				+nav_des(1,"","#slide-5","link-5","0","4","CLIENTE ")
-				+nav_des(1,"","#slide-6","link-6","0","5","PARTNER ")
-				+nav_des(1,"","#slide-7","link-7","0","6","CONTACTO ")
+				+nav_des(1,"","#slide-5","link-5","0","4","RECURSOS HUMANOS ")
+				+nav_des(1,"","#slide-6","link-5","0","4","CLIENTE ")
+				+nav_des(1,"","#slide-7","link-6","0","5","PARTNER ")
+				+nav_des(1,"","#slide-8","link-7","0","6","CONTACTO ")
 				+nav_des(0,"ei-sc-twitter","","","","","")
 				+nav_des(0,"ei-sc-facebook","","","","","")
 				
-			.menu-bar#menu-des
+			.menu-bar#menu-des(onclick="Materialize.showStaggeredList('#main-nav.main-nav')")
 				.uno.bar
 				.dos.bar
 				.tres.bar
@@ -45,167 +46,192 @@ html(lang="en")
 		#fullpage
 			#particles
 			section.section
-				.container
-					.row
-						.col.offset-s1.s10.offset-s1
-							.logo.scrollflow.-pop
-								.logo-vooxel.center-align
-									img.VOOXELL(src="img/vooxel/LOGO_VOOXELL_verde_RGB_WEB.png")
-									p.logo-text You have data, 
-										span.w-500 we give you a new dimension	
+				.row
+					.col.s12.logo
+						.logo-vooxel.center-align
+							img.VOOXELL(src="img/vooxel/LOGO_VOOXELL_verde_RGB_WEB.png")
+							p.logo-text You have data,
+								span.w-500 we give you a new dimension
+
 
 			section.section
 				.container
 					.row.scrollflow.-slide-bottom(data-scrollflow-start="0" data-scrollflow-distance="100" data-scrollflow-amount="200")
-						.col.offset-l6.l6.s12.center-align.pd-2
+						.col.l6.s12.center-align.pd-2
+							img(src="img/vooxel/vooxell-contacto-logo.svg")
+
+						.col.l6.s12.center-align.pd-2
 							h2.bebas QUIENES SOMOS
-							p Somos un equipo de profesionales especializados en inteligencia de negocios. Nuestro trabajo se centra en el análisis de la data que tienen nuestros clientes, para encontrar una nueva dimensión entre su negocio y la tecnología, que será de gran valor para manejar información y conocimiento, adecuado y oportuno para la toma de decisiones.
+							p Somos un equipo de profesionales especializados en inteligencia de negocio. Nuestro trabajo se centra en el análisis de la data que tienen nuestros clientes, para encontrar una nueva dimensión entre su negocio y la tecnología, que será de gran valor para manejar información y conocimiento, adecuado y oportuno para la toma de decisiones.
+
 
 			section.section
 				.row
 					.slide
-						.scrollflow.-slide-bottom(data-scrollflow-start="0" data-scrollflow-distance="100" data-scrollflow-amount="200")
+						.pd-lr-4.scrollflow.-slide-bottom(data-scrollflow-start="0" data-scrollflow-distance="100" data-scrollflow-amount="200")
 							.row
 								.col.offset-l1.s11.l5.left-align
 									h2 NUESTROS SERVICIOS
 									P  Vooxell le invita a ver distintos ángulos de un mismo escenario, una nueva dimensión de la tecnología puesta en sus manos para optimizar sus procesos y generar valor a su negocio; trabajando juntos, encontrando soluciones y oportunidades que harán realidad sus proyecciones. La búsqueda de soluciones a su medida, es nuestro desafío.
 								.col.s12.l5.offset-l1
 									.row.pd-8
-										+check("Inteligencia de Negocios (BigData, Aceleradores")
-										+check("Desarrollo Ágil")
-										+check("Consultoría experta (Migración, BD, Assessment")
+										+check("Inteligencia de Negocios (BigData, Aceleradores).")
+										+check("Desarrollo Ágil.")
+										+check("Consultoría experta (Migración, BD, Assessment).")
 
 					.slide
-						.row
-							.col.offset-l1.s12.l5.left-align.scrollflow.-slide-right
-								span.Numero 01.
-								h2 Inteligencia de Negocios 
-								h4 (BigData, Aceleradores)
-								P  Decisiones oportunas para lograr una ventaja competitiva.
-							.col.s12.l5.offset-l1.left-align.scrollflow.-slide-left.-opacity
-								.row
-									+check("Un know-how estructural y operativo diferente y un grupo humano de gran sinergia, creativo, innovador y multidisciplinario.")
+						.pd-lr-4
+							.row.pdt-2
+								.col.offset-l1.s12.l5.left-align.scrollflow
+									.-slide-right
+										span.Numero 01.
+										h2 Inteligencia de Negocios
+										h4 (BigData, Aceleradores)
+										P  Decisiones oportunas para lograr una ventaja competitiva.
+								.col.s12.l5.offset-l1.left-align.scrollflow
+									.-slide-left.-opacity
+										.row
+											+check("Un know-how estructural y operativo diferente y un grupo humano de gran sinergia, creativo, innovador y multidisciplinario.")
 
-									+check("Metodologías no tradicionales, flexibles ante nuevos requerimientos y que se adaptan fácilmente a las expectativas que usted tiene.")
+											+check("Metodologías no tradicionales, flexibles ante nuevos requerimientos y que se adaptan fácilmente a las expectativas que usted tiene.")
 
-									+check("Tener entregables a corto plazo que garanticen un producto final eficaz y eficiente, es nuestro compromiso.")
-
-					.slide
-						.row
-							.col.s12.offset-l1.l5.left-align.scrollflow.-slide-right.-opacity
-								span.Numero 02.
-								h2 Desarrollo Ágil
-								P  Un nuevo enfoque de revoluciona el desarrollo del software.
-							.col.s12.l5.offset-l1.left-align.scrollflow.-slide-left.-opacity
-								.row
-									+check("Almacenar y gestionar gran cantidad de datos, para transformarlos en información útil y confiable.")
-
-									+check("Estamos dispuestos a brindarle información segura y oportuna, que le ayudará no sólo a optimizar sus procesos de toma de decisiones.")
-
-									+check("Nuestra mirada 360° nos permite darle una nueva dimensión a su data, nuevas perspectivas de solución que elevarán la productividad y competitividad de su negocio.")
+											+check("Tener entregables a corto plazo que garanticen un producto final eficaz y eficiente, es nuestro compromiso.")
 
 					.slide
-						.row
-							.col.s12.offset-l1.l5.left-align.vh-100.scrollflow.-slide-right
-								span.Numero 03.
-								h2 Consultoría experta 
-								h4 (Migración, BD, Assessment)
-								P  Nuestro activo más importante a su servicio
-							.col.s12.l5.offset-l1.left-align.vh-100.scrollflow.-slide-left.-opacity
-								.row.pd-8
-									+check("Almacenar y gestionar gran cantidad de datos, para transformarlos en información útil y confiable.")
+						.pd-lr-4
+							.row.pdt-2
+								.col.s12.offset-l1.l5.left-align.scrollflow.-slide-right.-opacity
+									span.Numero 02.
+									h2 Desarrollo Ágil
+									P  Un nuevo enfoque de revoluciona el desarrollo del software.
+								.col.s12.l5.offset-l1.left-align.scrollflow.-slide-left.-opacity
+									.row
+										+check("Almacenar y gestionar gran cantidad de datos, para transformarlos en información útil y confiable.")
 
-									+check("Estamos dispuestos a brindarle información segura y oportuna, que le ayudará no sólo a optimizar sus procesos de toma de decisiones.")
+										+check("Estamos dispuestos a brindarle información segura y oportuna, que le ayudará no sólo a optimizar sus procesos de toma de decisiones.")
 
-									+check("Nuestra mirada 360° nos permite darle una nueva dimensión a su data, nuevas perspectivas de solución que elevarán la productividad y competitividad de su negocio.")
+										+check("Nuestra mirada 360° nos permite darle una nueva dimensión a su data, nuevas perspectivas de solución que elevarán la productividad y competitividad de su negocio.")
+
+					.slide
+						.pd-lr-4
+							.row.pdt-2
+								.col.s12.offset-l1.l5.left-align.vh-100.scrollflow.-slide-right
+									span.Numero 03.
+									h2 Consultoría experta 
+									h4 (Migración, BD, Assessment)
+									P  Nuestro activo más importante a su servicio
+								.col.s12.l5.offset-l1.left-align.vh-100.scrollflow.-slide-left.-opacity
+									.row.pd-8
+										+check("Almacenar y gestionar gran cantidad de datos, para transformarlos en información útil y confiable.")
+
+										+check("Estamos dispuestos a brindarle información segura y oportuna, que le ayudará no sólo a optimizar sus procesos de toma de decisiones.")
+
+										+check("Nuestra mirada 360° nos permite darle una nueva dimensión a su data, nuevas perspectivas de solución que elevarán la productividad y competitividad de su negocio.")
 
 			section.section
-				.container
-					.row.center-align.scrollflow.-slide-bottom(data-scrollflow-start="0" data-scrollflow-distance="100" data-scrollflow-amount="200")
+				.container.center-align
+					.row
 						h2 NUESTROS PILARES
+					.row.pd-2
 						.col.s4.scrollflow.-slide-bottom.-opacity
-							+pilar('img/ico-tuerca.png','EXPERIENCIA','Confianza','Conocimiento','Especialización')
+							+pilar('img/pilar/experiencia.png','EXPERIENCIA','Confianza','Conocimiento','Especialización')
 
 						.col.s4.scrollflow.-slide-top.-opacity
-							+pilar('img/ico-tuerca.png','EXCELENCIA','Calidad','Creatividad','Innovación')
+							+pilar('img/pilar/excelencia.png','EXCELENCIA','Calidad','Creatividad','Innovación')
 
 						.col.s4.scrollflow.-slide-bottom.-opacity
-							+pilar('img/ico-tuerca.png','EFICIENCIA','Competividad','Compromiso','Productividad')
+							+pilar('img/pilar/probando.png','EFICIENCIA','Competividad','Compromiso','Productividad')
 
 			section.section
 				.container.Perfiles-js
+					.contenedor-inicial.center-align.pd-4
+						h2 REFERENCIAS DEL EQUIPO
+						p Nuestro equipo de inteligencia es una garantía de estabilidad y experiencia en el manejo de sus problemas.
 					.nav
 						ul.right-align
-							li.lista
-								a.btn-perfil.filter.active(data-filter=".consultor") CONSULTOR
-								span.linea
 							li
-								a.btn-perfil.filter(data-filter=".desarrollo") DESARROLLO
+								a.btn-perfil.filter(data-filter=".ventas") VENTAS
 								span.linea
 							li
 								a.btn-perfil.filter(data-filter=".experto") EXPERTO
 								span.linea
 							li
-								a.btn-perfil.filter(data-filter=".ventas") VENTAS
+								a.btn-perfil.filter(data-filter=".consultor") CONSULTOR
 								span.linea
+							li
+								a.btn-perfil.filter(data-filter=".desarrollo") DESARROLLO
+								span.linea
+							li
+								a.btn-perfil-referen(data-filter=".references") REFERENCIAS
+								span.linea
+
 
 					#Container.row
 						+perfil("","consultor",1,"Consultor")
-						+perfil("img/perfil/consultor/alexis-christoforou.jpg","consultor",0)
-						+perfil("img/perfil/consultor/alexis-christoforou.jpg","consultor",0)
-						+perfil("img/perfil/consultor/alexis-christoforou.jpg","consultor",0)
-						+perfil("img/perfil/consultor/alexis-christoforou.jpg","consultor",0)
-						+perfil("img/perfil/consultor/alexis-christoforou.jpg","consultor",0)
+						+perfil("img/perfil/consultor/alexis-christoforou.jpg","consultor",0,"","Eduardo","Cel. 992645479")
+						+perfil("img/perfil/consultor/alexis-christoforou.jpg","consultor",0,"","Cristian","Cel. 992645479")
+						+perfil("img/perfil/consultor/alexis-christoforou.jpg","consultor",0,"","Oscar","Cel. 992645479")
+						+perfil("img/perfil/consultor/alexis-christoforou.jpg","consultor",0,"","Julio","Cel. 992645479")
+						+perfil("img/perfil/consultor/alexis-christoforou.jpg","consultor",0,"","Joan","Cel. 992645479")
 						+perfil("","desarrollo",1,"Desarrollo")
-						+perfil("img/perfil/desarrollo/neil-aronson.jpg","desarrollo",0)
-						+perfil("img/perfil/desarrollo/neil-aronson.jpg","desarrollo",0)
-						+perfil("img/perfil/desarrollo/neil-aronson.jpg","desarrollo",0)
-						+perfil("img/perfil/desarrollo/neil-aronson.jpg","desarrollo",0)
-						+perfil("img/perfil/desarrollo/neil-aronson.jpg","desarrollo",0)
+						+perfil("img/perfil/desarrollo/neil-aronson.jpg","desarrollo",0,"","Eduardo","Cel. 992645479")
+						+perfil("img/perfil/desarrollo/neil-aronson.jpg","desarrollo",0,"","Eduardo","Cel. 992645479")
+						+perfil("img/perfil/desarrollo/neil-aronson.jpg","desarrollo",0,"","Eduardo","Cel. 992645479")
+						+perfil("img/perfil/desarrollo/neil-aronson.jpg","desarrollo",0,"","Eduardo","Cel. 992645479")
+						+perfil("img/perfil/desarrollo/neil-aronson.jpg","desarrollo",0,"","Eduardo","Cel. 992645479")
 						+perfil("","experto",1,"Experto")
-						+perfil("img/perfil/experto/julien-tissandier.jpg","experto",0)
-						+perfil("img/perfil/experto/julien-tissandier.jpg","experto",0)
-						+perfil("img/perfil/experto/julien-tissandier.jpg","experto",0)
-						+perfil("img/perfil/experto/julien-tissandier.jpg","experto",0)
-						+perfil("img/perfil/experto/julien-tissandier.jpg","experto",0)
+						+perfil("img/perfil/experto/julien-tissandier.jpg","experto",0,"","Eduardo","Cel. 992645479")
+						+perfil("img/perfil/experto/julien-tissandier.jpg","experto",0,"","Eduardo","Cel. 992645479")
+						+perfil("img/perfil/experto/julien-tissandier.jpg","experto",0,"","Eduardo","Cel. 992645479")
+						+perfil("img/perfil/experto/julien-tissandier.jpg","experto",0,"","Eduardo","Cel. 992645479")
+						+perfil("img/perfil/experto/julien-tissandier.jpg","experto",0,"","Eduardo","Cel. 992645479")
 						+perfil("","ventas",1,"VENTAS")
-						+perfil("img/perfil/ventas/benjamin-merritt.jpg","ventas",0)
-						+perfil("img/perfil/ventas/benjamin-merritt.jpg","ventas",0)
-						+perfil("img/perfil/ventas/benjamin-merritt.jpg","ventas",0)
-						+perfil("img/perfil/ventas/benjamin-merritt.jpg","ventas",0)
-						+perfil("img/perfil/ventas/benjamin-merritt.jpg","ventas",0)
+						+perfil("img/perfil/ventas/benjamin-merritt.jpg","ventas",0,"","Eduardo","Cel. 992645479")
+						+perfil("img/perfil/ventas/benjamin-merritt.jpg","ventas",0,"","Eduardo","Cel. 992645479")
+						+perfil("img/perfil/ventas/benjamin-merritt.jpg","ventas",0,"","Eduardo","Cel. 992645479")
+						+perfil("img/perfil/ventas/benjamin-merritt.jpg","ventas",0,"","Eduardo","Cel. 992645479")
+						+perfil("img/perfil/ventas/benjamin-merritt.jpg","ventas",0,"","Eduardo","Cel. 992645479")
 
 			section.section
 				.container.center-align
-					.row.section-cliente.scrollflow.-pop
+					.row.section-cliente.pd-2
 						h2#slide-5-title.title-cliente NUESTROS CLIENTES
-						.row
-							.col.s6.l4
-								.cliente.logo-cliente-3
-							.col.s6.l4
-								.cliente.logo-cliente-1
-							.col.s6.l4
-								.cliente.logo-clinte-2
+						p Conoce cómo pensamos, en qué proyectos estamos involucrados, e ideas sobre nuestra visión a futuro.
+						.carousel
+							+clientes("img/cliente/sura-infra.jpg","modal-1","Empresa: Sura","Monitoreo de Recargas","Sura")
+							+clientes("img/cliente/entel-infra.jpg","modal-2","Empresa: Entel","Monitoreo de Recargas","Entel")
+							+clientes("img/cliente/upc-infra.jpg","modal-3","Empresa: UPC","Monitoreo de Recargas","UPC")
+							+clientes("img/cliente/inkafarma-infra2.jpg","modal-4","Empresa: InkaFarma","Monitoreo de Recargas","InkaFarma")
+							+clientes("img/cliente/falabella-infra.jpg","modal-1","Empresa: Banco Falabella","Monitoreo de Recargas","Banco Falabella")
+							+clientes("img/cliente/entel-infra.jpg","modal-2","Empresa: Entel","Monitoreo de Recargas","Entel")
+							+clientes("img/cliente/rpp-infra.jpg","modal-3","Empresa: Grupo RPP","Monitoreo de Recargas","Grupo RPP")
 
 			section.section
 				.container.center-align
 					.row.scrollflow.-slide-bottom(data-scrollflow-start="0" data-scrollflow-distance="200" data-scrollflow-amount="200")
 						h2 PARTNER
-						.tablet
-							.contenido
-								.slide-parnet
-									ul.slides
-										li
-											.partner.part-1
-										li
-											.partner.part-2
-										li
-											.partner.part-3
+						.col.s12
+							.tablet
+								.contenido
+									.slide-parnet.slider
+										ul.slides
+											li
+												img(src="img/partner/PARTNER_IBM.jpg")
+												.caption
+													h3 IBM
+											li
+												img(src="img/partner/TABLEU.jpg")
+												.caption
+													h3 TABLEU
+											li
+												img(src="img/partner/ORACLE.jpg")
+												.caption
+													h3 ORACLE
 
 			section.section
 				.container
-					.scrollflow.-pop
-						.row.section-cliente
+					.section-cliente
+						.row
 							.col.s12.offset-l1.l5.center-align
 								h3.txt-negro CONTÁCTANOS
 								P Estamos listos para ayudarte. Si requieres información adicional sobre nuestros servicios, o deseconversar con nosotros sobre los proyectos o soluciones que necesites implementar en tu negocio, no dudes en ponerte en contacto con nosotros. 
@@ -224,24 +250,21 @@ html(lang="en")
 												.row
 													.col.s6.input-field
 														input#nombres-frm1.validate(type="text")
-														label(for="nombres-frm1") Nombres:
+														label(for="nombres-frm1") Nombres y Apellidos:
 													.col.s6.input-field
-														input#apellidos-frm1.validate(type="text")
-														label(for="apellidos-frm1") Apellidos:
-												.row
-													.s6.input-field
-																	input#apellidos-frm1.validate(type="text")
+														input#empresa-frm1.validate(type="text")
 														label(for="empresa-frm1") Empresa:
 													.col.s6.input-field
 														input#telefono-frm1.validate(type="text")
 														label(for="telefono-frm1") Teléfono:
-													.col.s12.input-field
+													.col.s6.input-field
 														input#email-frm1.validate(type="email")
 														label(for="email-frm1") Email:
 													.row
 														.input-fields.col.s12
 															textarea#textarea-frm1.materialize-textarea
 															label(for="textarea-frm1") Requerimientos:
+													.row
 														button.btn.waves-effet.waves-light(type="submit" name="action") Enviar
 															i.material-icons.right send
 
@@ -301,9 +324,6 @@ html(lang="en")
 									i.material-icons.cell call
 									span.cell-txt 
 										b +511 1721 6755
-
-
-
 	
 		script(src="js/jquery.js")
 		script(src="https://cdn.jsdelivr.net/evil-icons/1.8.0/evil-icons.min.js")
