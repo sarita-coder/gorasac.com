@@ -127,5 +127,7 @@ $(document).ready(function() {
         menu: '#nav-parallax',
         scrollingSpeed: 1500,
         controlArrows: false,
-        slidesNavigation:true,
+        lazyLoading: false,
+        erticalCentered: true,
+        css3:true,
     });
