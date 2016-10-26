@@ -126,8 +126,7 @@ $(document).ready(function() {
         anchors: ['slide-1', 'slide-2', 'slide-3', 'slide-4', 'slide-5', 'slide-6', 'slide-7', 'slide-8'],
         menu: '#nav-parallax',
         scrollingSpeed: 1500,
+        slidesNavigation: true,
         controlArrows: false,
-        lazyLoading: false,
-        erticalCentered: true,
-        css3:true,
+
     });

@@ -70,12 +70,17 @@
     .carousel-item{
       .modal-trigger{
         display: inline-block;
+        z-index:10000;
       }
     }   
   }
 
-
-
+  .btn-form, .btn-perfil {
+    z-index:10000!important;
+  }
+  .nav{
+    float:right;
+  }
 
 }
 

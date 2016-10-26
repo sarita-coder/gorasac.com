@@ -449,7 +449,7 @@
 		}
 		.modal-trigger{
 			display: none;
-			background: $bg-verde;
+			background: black;
 			position: absolute;
 			top:50%;
 			left:-5%;
@@ -472,13 +472,12 @@
 	}
 	.carousel-item:hover .modal-trigger{
 		display: inline-block;
-		background:black;
 		left:15%;
 		webkit-transition: all 3s;
 
 	}
 	.carousel-item:hover img{
-		opacity: 1;
+
 		webkit-transition: all 1s;
 
 	}
