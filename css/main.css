@@ -6906,8 +6906,8 @@ h1, h2, h3, h4, h5, h6 {
 
   /**** barra de menu para smarphone **/
   .main-nav {
-    width: 85vw;
-    left: -85vw; }
+    width: 75vw;
+    left: -75vw; }
 
   .menu-bar {
     right: -60px;
@@ -6945,7 +6945,7 @@ h1, h2, h3, h4, h5, h6 {
 
   /***Contacto***/
   .red_contacto {
-    padding-top: 3%; } }
+    padding-top: 0%; } }
 @media (max-width: 350px) {
   .ico-img {
     display: none; } }
