@@ -6940,7 +6940,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .txt, .btn-contact {
     margin-top: 1.5rem;
-    z-index: 10000; }
+    z-index: 10000 !important; }
 
   /***Contacto***/
   .red_contacto {
