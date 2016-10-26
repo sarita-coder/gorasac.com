@@ -29,7 +29,7 @@ $(document).ready(function() {
     });
 
     $('.carousel').carousel({
-       padding:20,
+       padding:40,
        dist:-10,
        indicators:false,
        shift:5,
@@ -65,7 +65,7 @@ $(document).ready(function() {
         scrollingSpeed: 1500,
         slidesNavigation: false,
         controlArrows: true,
-        
+
 
     });
         
