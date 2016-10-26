@@ -4,15 +4,6 @@ $('#menu-des').on('click',function(){
 })
 
 $(document).ready(function() {
-    $('#fullpage').fullpage({
-        sectionsColor: ['#2d2f31', '#2d2f31', '#e0e0e0', '#0ed855', '#2d2f31', '#e0e0e0', '#0ed855', '#e0e0e0'],
-        anchors: ['slide-1', 'slide-2', 'slide-3', 'slide-4', 'slide-5', 'slide-6', 'slide-7', 'slide-8'],
-        menu: '#nav-parallax',
-        scrollingSpeed: 1500,
-        slidesNavigation: false,
-        controlArrows: true,
-
-    });
 
     /*** perfiles ***/
 	$('#Container').mixItUp();
@@ -67,6 +58,16 @@ $(document).ready(function() {
         $('.mix').hide("fast");
     })
 
+    $('#fullpage').fullpage({
+        sectionsColor: ['#2d2f31', '#2d2f31', '#e0e0e0', '#0ed855', '#2d2f31', '#e0e0e0', '#0ed855', '#e0e0e0'],
+        anchors: ['slide-1', 'slide-2', 'slide-3', 'slide-4', 'slide-5', 'slide-6', 'slide-7', 'slide-8'],
+        menu: '#nav-parallax',
+        scrollingSpeed: 1500,
+        slidesNavigation: false,
+        controlArrows: true,
+        
+
+    });
         
  
 

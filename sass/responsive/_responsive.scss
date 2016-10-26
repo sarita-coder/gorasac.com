@@ -63,20 +63,27 @@
       left: 0.05rem;
     }
   }
+  /*** ervicios **/
+
   .Numero{
     font-size:1rem;
   }
-  .btn-form, .btn-perfil {
-    z-index:10000!important;
+  .tablet{
+    padding: 0.5rem 1.3rem 2rem;
   }
-  .nav{
-    float:right;
+
+  .fp-controlArrow{
+    top:65%!important;
   }
+  
   .txt, .btn-contact {
     margin-top:1.5rem;
+    z-index:10000;
   }
-  .carousel-item {
-    max-width:150px;
+  /***Contacto***/
+
+  .red_contacto{
+    padding-top:3%;
   }
 
 }
