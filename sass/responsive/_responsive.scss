@@ -75,8 +75,12 @@
   .txt, .btn-contact {
     margin-top:1.5rem;
   }
+  .carousel-item {
+    max-width:150px;
+  }
 
 }
+
 
 @media (max-width: 350px) {
   .ico-img{
