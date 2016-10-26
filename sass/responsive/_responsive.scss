@@ -66,23 +66,23 @@
   .Numero{
     font-size:1rem;
   }
-  .carousel{
-    .carousel-item{
-      .modal-trigger{
-        display: inline-block;
-        z-index:10000;
-      }
-    }   
-  }
-
   .btn-form, .btn-perfil {
     z-index:10000!important;
   }
   .nav{
     float:right;
   }
+  .txt, .btn-contact {
+    margin-top:1.5rem;
+  }
 
 }
 
+@media (max-width: 350px) {
+  .ico-img{
+    display:none;
+  }
+
+}
 
   

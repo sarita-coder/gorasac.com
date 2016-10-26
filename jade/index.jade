@@ -132,18 +132,27 @@ html(lang="en")
 					.row
 						h2 NUESTROS PILARES
 					.row.mg-2
-						.col.s4.scrollflow.-slide-bottom.-opacity
+						.col.s6.l4.scrollflow.-slide-bottom.-opacity
 							+pilar('img/pilar/experiencia.png','EXPERIENCIA','Confianza','Conocimiento','Especialización')
 
-						.col.s4.scrollflow.-slide-top.-opacity
+						.col.s6.l4.scrollflow.-slide-top.-opacity
 							+pilar('img/pilar/excelencia.png','EXCELENCIA','Calidad','Creatividad','Innovación')
 
-						.col.s4.scrollflow.-slide-bottom.-opacity
+						.col.offset-s3.s6.l4.scrollflow.-slide-bottom.-opacity
 							+pilar('img/pilar/probando.png','EFICIENCIA','Competividad','Compromiso','Productividad')
 
 			section.section
 				.container.Perfiles-js
-					.nav
+					.contenedor-inicial.center-align
+						h2 REFERENCIAS DEL EQUIPO
+						p Nuestro equipo de inteligencia es una garantía de estabilidad y experiencia en el manejo de sus problemas.
+						.perfil
+							.col.s4
+
+							.col.s4
+							.col.s4
+
+					.nav.hide-on-med-and-down
 						ul.right-align
 							li
 								a.btn-perfil.filter(data-filter=".ventas") VENTAS
@@ -162,7 +171,7 @@ html(lang="en")
 								span.linea
 
 
-					#Container.row
+					#Container.row.hide-on-med-and-down
 						+perfil("","consultor",1,"Consultor")
 						+perfil("img/perfil/consultor/alexis-christoforou.jpg","consultor",0,"","Eduardo","Cel. 992645479")
 						+perfil("img/perfil/consultor/alexis-christoforou.jpg","consultor",0,"","Cristian","Cel. 992645479")
@@ -228,9 +237,9 @@ html(lang="en")
 					.section-cliente
 						.row.pdt-8
 							.col.s12.offset-l1.l5.center-align
-								h3.txt-negro CONTÁCTANOS
+								h3.txt-negro.txt CONTÁCTANOS
 								P Estamos listos para ayudarte. Si requieres información adicional sobre nuestros servicios, o deseconversar con nosotros sobre los proyectos o soluciones que necesites implementar en tu negocio, no dudes en ponerte en contacto con nosotros. 
-								button#contac-frm1.waves-effect.btn.black Comienza
+								button#contac-frm1.waves-effect.btn.black.btn-contact Comienza
 								#form1.form
 									.container
 										.row.pd-2
@@ -261,9 +270,9 @@ html(lang="en")
 												i.material-icons.right send
 
 							.col.s12.l5.offset-l1.center-align
-								h3.txt-verde NUEVOS TALENTOS
+								h3.txt-verde.txt NUEVOS TALENTOS
 								P Sé parte de la familia VOOXEL. Estamos en busca de profesionales dispuestos a enfrentar retos y nuevos desafíos.
-								button#contac-frm2.waves-effect.btn.btn-verde Comienza
+								button#contac-frm2.btn.btn-verde.btn-contact Comienza
 								#form2.form
 									.container
 										.row.pd-2
@@ -313,11 +322,6 @@ html(lang="en")
 									a(href="" target="_blank")
 										i.material-icons.cell call
 										span +511 1721 6755
-
-									a(href="" target="_blank")
-										i.material-icons.cell call
-										span +511 1721 6755
-
 	
 		script(src="js/jquery.js")
 		script(src="https://cdn.jsdelivr.net/evil-icons/1.8.0/evil-icons.min.js")

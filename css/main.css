@@ -6548,7 +6548,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 950vh;
   position: fixed;
   z-index: 2;
-  opacity: 0.5; }
+  opacity: 0.3; }
 
 /**** Personalizacion de section */
 #fullpage section:nth-child(2) h2 {
@@ -6836,7 +6836,8 @@ h1, h2, h3, h4, h5, h6 {
 .red_contacto {
   padding-top: 20%;
   display: flex;
-  justify-content: space-between; }
+  justify-content: flex-end;
+  flex-wrap: wrap; }
   .red_contacto a {
     display: flex;
     align-items: stretch; }
@@ -6925,14 +6926,16 @@ h1, h2, h3, h4, h5, h6 {
   .Numero {
     font-size: 1rem; }
 
-  .carousel .carousel-item .modal-trigger {
-    display: inline-block;
-    z-index: 10000; }
-
   .btn-form, .btn-perfil {
     z-index: 10000 !important; }
 
   .nav {
-    float: right; } }
+    float: right; }
+
+  .txt, .btn-contact {
+    margin-top: 1.5rem; } }
+@media (max-width: 350px) {
+  .ico-img {
+    display: none; } }
 
 /*# sourceMappingURL=main.css.map */
