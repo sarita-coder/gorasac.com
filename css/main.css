@@ -6403,6 +6403,9 @@ h1, h2, h3, h4, h5, h6 {
 .fp-controlArrow {
   border-color: #00FF5A; }
 
+.white {
+  color: white; }
+
 /***Header Deslizable**/
 .main-nav {
   background: #00FF5A;
@@ -6412,7 +6415,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 44px;
   transition: all .5s;
   width: 35vw;
-  z-index: 100000;
+  z-index: 1000;
   position: fixed; }
 
 .menu {
@@ -6454,8 +6457,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   right: -120px;
   top: 50px;
-  width: 40px;
-  z-index: 100000; }
+  width: 40px; }
 
 .mover {
   right: -60px; }
@@ -6822,7 +6824,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: 3%;
   left: 0;
-  z-index: 1000;
+  z-index: 100000;
   width: 100%;
   background: #e0e0e0; }
   #form1 h4, #form2 h4 {
@@ -6841,8 +6843,9 @@ h1, h2, h3, h4, h5, h6 {
 .red_contacto {
   padding-top: 20%;
   display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap; }
+  justify-content: space-between;
+  flex-wrap: wrap;
+  z-index: 100000; }
   .red_contacto a {
     display: flex;
     align-items: stretch; }
@@ -6851,10 +6854,11 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   z-index: 1000; }
   .icon-contacto a {
-    z-index: 1002;
+    z-index: 1000000;
     color: black; }
     .icon-contacto a i {
-      color: black; }
+      color: black;
+      z-index: 1000000; }
   .icon-contacto a:hover i, .icon-contacto a:hover span {
     color: #00FF5A;
     margin-bottom: 5px; }
@@ -6872,9 +6876,6 @@ h1, h2, h3, h4, h5, h6 {
   .icon-contacto .cell:hover {
     color: #00FF5A; }
 
-@media (max-width: 768px) {
-  .vh-100 {
-    height: 100vh; } }
 @media (max-width: 768px) {
   h2 {
     font-size: 2.1rem; }
@@ -6940,10 +6941,11 @@ h1, h2, h3, h4, h5, h6 {
 
   .txt, .btn-contact {
     margin-top: 1.5rem;
-    z-index: 1000 !important; }
+    z-index: 5 !important; }
 
   .form {
-    z-index: 1000 !important; }
+    margin-top: 5rem;
+    z-index: 1000000 !important; }
 
   /***Contacto***/
   .red_contacto {

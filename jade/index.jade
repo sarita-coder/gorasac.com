@@ -24,10 +24,10 @@ html(lang="en")
 				+nav_des(1,"","#slide-6","link-5","0","4","CLIENTE ")
 				+nav_des(1,"","#slide-7","link-6","0","5","PARTNER ")
 				+nav_des(1,"","#slide-8","link-7","0","6","CONTACTO ")
-				+nav_des(0,"ei-sc-twitter","","","","","")
-				+nav_des(0,"ei-sc-facebook","","","","","")
+				+nav_des(0,"ei-sc-twitter","https://twitter.com/intent/tweet?url=http://www.vooxell.com&text=Voxell.com: You have data, we give you a new dimension.","white","","","")
+				+nav_des(0,"ei-sc-facebook","","white","","","")
 				
-			.menu-bar#menu-des(onclick="Materialize.showStaggeredList('#main-nav.main-nav')")
+			.menu-bar#menu-des
 				.uno.bar
 				.dos.bar
 				.tres.bar
@@ -62,6 +62,7 @@ html(lang="en")
 						.col.l6.s12.center-align.pd-2
 							h2.bebas QUIENES SOMOS
 							p Somos un equipo de profesionales especializados en inteligencia de negocio. Nuestro trabajo se centra en el análisis de la data que tienen nuestros clientes, para encontrar una nueva dimensión entre su negocio y la tecnología, que será de gran valor para manejar información y conocimiento, adecuado y oportuno para la toma de decisiones.
+							p VOOXELL está hecho de experiencia, excelencia y eficiencia. le aseguramos compromiso, valor, alto rendimiento y satisfacción a través de soluciones innovadoras de mirada distinta y con nuevas dimensiones.
 
 
 			section.section
@@ -152,7 +153,7 @@ html(lang="en")
 							.col.s4
 							.col.s4
 
-					.nav.hide-on-med-and-down
+					.nav.hide-on-small-only
 						ul.right-align
 							li
 								a.btn-perfil.filter(data-filter=".ventas") VENTAS
@@ -171,13 +172,13 @@ html(lang="en")
 								span.linea
 
 
-					#Container.row.hide-on-med-and-down
+					#Container.row.hide-on-small-only
 						+perfil("","consultor",1,"Consultor")
-						+perfil("img/perfil/consultor/alexis-christoforou.jpg","consultor",0,"","Eduardo","Cel. 992645479")
-						+perfil("img/perfil/consultor/alexis-christoforou.jpg","consultor",0,"","Cristian","Cel. 992645479")
-						+perfil("img/perfil/consultor/alexis-christoforou.jpg","consultor",0,"","Oscar","Cel. 992645479")
-						+perfil("img/perfil/consultor/alexis-christoforou.jpg","consultor",0,"","Julio","Cel. 992645479")
-						+perfil("img/perfil/consultor/alexis-christoforou.jpg","consultor",0,"","Joan","Cel. 992645479")
+						+perfil("img/perfil/consultor/julio-cordova.jpg","consultor",0,"","Julio Cordova","Jefe de Proyecto")
+						+perfil("img/perfil/consultor/giancarlo-cordova.jpg","consultor",0,"","Giancarlo Cordova","Consultor BI")
+						+perfil("img/perfil/consultor/jenny-Espinoza.jpg","consultor",0,"","Jenny Espinoza","Consultor BI")
+						+perfil("img/perfil/consultor/richar-ucharico.jpg","consultor",0,"","Richard Ucharico","Consultor BI")
+						+perfil("img/perfil/consultor/eduardo-hong.jpg","consultor",0,"","Eduardo Hong","Consultor BI")
 						+perfil("","desarrollo",1,"Desarrollo")
 						+perfil("img/perfil/desarrollo/neil-aronson.jpg","desarrollo",0,"","Eduardo","Cel. 992645479")
 						+perfil("img/perfil/desarrollo/neil-aronson.jpg","desarrollo",0,"","Eduardo","Cel. 992645479")
@@ -212,7 +213,7 @@ html(lang="en")
 
 			section.section
 				.container.center-align
-					.row.scrollflow.-slide-bottom(data-scrollflow-start="0" data-scrollflow-distance="200" data-scrollflow-amount="200")
+					.row
 						h2 PARTNER
 						.col.s12
 							.tablet

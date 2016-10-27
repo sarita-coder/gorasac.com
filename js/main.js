@@ -1,7 +1,18 @@
-$('#menu-des').on('click',function(){
-	$('#main-nav').toggleClass('mostrar')
-	$('#menu-des').toggleClass('mover')
-})
+
+    /*** Formularios ***/
+    $('#contac-frm1').click(function(){
+        $('#form1').fadeIn(1000);
+    })
+    $('#contac-frm2').click(function(){
+        $('#form2').fadeIn(1000);
+    })
+    $('.btn-cerrar').click(function(){
+        $('#form1').fadeOut(1000);
+    })
+    $('.btn-cerrar').click(function(){
+        $('#form2').fadeOut(1000);
+    })
+
 
 $(document).ready(function() {
 
@@ -9,19 +20,7 @@ $(document).ready(function() {
 	$('#Container').mixItUp();
 
     Materialize.updateTextFields();
-    /*** Formularios ***/
-    $('#contac-frm1').click(function(){
-    	$('#form1').fadeIn(1000);
-    })
-    $('#contac-frm2').click(function(){
-    	$('#form2').fadeIn(1000);
-    })
-    $('.btn-cerrar').click(function(){
-    	$('#form1').fadeOut(1000);
-    })
-    $('.btn-cerrar').click(function(){
-    	$('#form2').fadeOut(1000);
-    })
+
     /** header **/
     $('.slide-parnet').slider({
         indicators:false,
@@ -34,29 +33,19 @@ $(document).ready(function() {
        indicators:false,
        shift:5,
     });
-    $('.carousel').carousel('next');
-    $('.carousel').carousel('next', 3); // Move next n times.
-    // Previous slide
-    $('.carousel').carousel('prev');
-    $('.carousel').carousel('prev', 4); // Move prev n times.
-    // Set to nth slide
-    $('.carousel').carousel('set', 4);
+
 
     $('.modal-trigger').leanModal({
         opacity: 0.1,
     });
 
-    /**Perfil**/
-    $('.btn-perfil').click(function(){
-        $('.contenedor-inicial').hide(1000);
-        $('.contenedor-inicial').hide("fast");
+    $('#menu-des').on('click',function(){
+        $('#main-nav').toggleClass('mostrar')
+        $('#menu-des').toggleClass('mover')
     })
 
-    $('.btn-perfil-referen').click(function(){
-        $('.contenedor-inicial').show(3000);
-        $('.contenedor-inicial').show("slow");
-        $('.mix').hide("fast");
-    })
+    /**Perfil**/
+
 
     $('#fullpage').fullpage({
         sectionsColor: ['#2d2f31', '#2d2f31', '#e0e0e0', '#0ed855', '#2d2f31', '#e0e0e0', '#0ed855', '#e0e0e0'],
@@ -65,8 +54,10 @@ $(document).ready(function() {
         scrollingSpeed: 1500,
         slidesNavigation: false,
         controlArrows: true,
-
-
+        css3:true
+        // lazyLoading:true,
+        // verticalCentered: true,
+        // resize:true,
     });
         
  

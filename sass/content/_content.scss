@@ -7,7 +7,7 @@
 	line-height: 44px; 
 	transition: all .5s;
 	width: 35vw;
-	z-index: 100000;
+	z-index: 1000;
 	position:fixed;
 }
 .menu{
@@ -40,6 +40,7 @@
 		}
 	}
 }
+
 .menu__link:hover{
 	padding-right: 0rem;
 	-webkit-transition: all .6s;
@@ -56,7 +57,7 @@
 	right:-120px;
 	top:50px;
 	width:40px;
-	z-index:100000;
+
 }
 
 .mover{
@@ -525,13 +526,15 @@
 	color:gray;
  }	
 
+
+
 /* Contactanos */
 #form1, #form2{
 	display:none;
 	position:absolute;
 	top:3%;
 	left:0;
-	z-index:1000;
+	z-index:100000;
 	width:100%;
 	background:$bg-white;
 	h4{
@@ -556,8 +559,9 @@
 .red_contacto{
 	padding-top:20%;
 	display:flex;
-	justify-content: flex-end;
+	justify-content:space-between;
 	flex-wrap: wrap;
+	z-index: 100000;
 	a{
 		display: flex;
 		align-items: stretch;
@@ -568,10 +572,11 @@
 	width:100%;
 	z-index:1000;
 	a{
-		z-index:1002;
+		z-index:1000000;
 		color:black;
 		i{
 		color:black;
+		z-index:1000000;
 		}	
 	}
 	a:hover i, a:hover span{
